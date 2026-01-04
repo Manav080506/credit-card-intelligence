@@ -1,0 +1,48 @@
+{
+  "card_id": "hdfc_regalia_gold",
+  "card_name": "HDFC Regalia Gold Credit Card",
+  "issuer": "HDFC Bank",
+  "network": ["Visa", "Mastercard"],
+  "tier": "premium",
+  "reward_type": "points",
+
+  "earn_rules": [
+    {
+      "category": "others",
+      "reward_rate": 4,
+      "reward_unit": "points_per_150"
+    }
+  ],
+
+  "redemption_rules": [
+    {
+      "id": "flight_transfer",
+      "type": "travel",
+      "partner": "Air India",
+      "value_per_point": 0.40,
+      "min_points": 5000,
+      "notes": "Best value when redeemed for flights"
+    },
+    {
+      "id": "gift_voucher",
+      "type": "voucher",
+      "partner": "Amazon",
+      "value_per_point": 0.25,
+      "min_points": 1000,
+      "notes": "Instant and flexible redemption"
+    },
+    {
+      "id": "statement_credit",
+      "type": "cashback",
+      "partner": "Bank Statement",
+      "value_per_point": 0.20,
+      "min_points": 500,
+      "notes": "Lowest value, use only if needed"
+    }
+  ],
+
+  "meta": {
+    "last_verified": "2026-01-04",
+    "sources": ["hdfc_bank_site", "public_reward_tables"]
+  }
+}
