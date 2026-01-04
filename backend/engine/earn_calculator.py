@@ -1,5 +1,6 @@
 import json
 import os
+import math
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 CARD_DATA_DIR = os.path.join(BASE_DIR, "data", "cards")
@@ -34,31 +35,65 @@ def calculate_reward(card_id: str, amount: float, category: str) -> dict:
             "reward_amount": 0,
             "reward_unit": None,
             "cap_applied": False,
-            "explanation": "No reward rule applicable"
+            "explanation": "No reward rule applicable",
+            "metadata": {}
         }
 
-    reward_rate = rule.get("reward_rate", 0)
-    reward = amount * reward_rate
-
+    reward_unit = rule.get("reward_unit")
     cap_applied = False
-    cap_info = rule.get("cap")
+    metadata = {}
 
-    if cap_info:
-        cap_amount = cap_info.get("amount")
-        if cap_amount is not None and reward > cap_amount:
-            reward = cap_amount
-            cap_applied = True
+    # CASE 1: Cashback cards
+    if reward_unit == "cashback":
+        reward = amount * rule.get("reward_rate", 0)
 
-    reward_unit = rule.get("reward_unit", "unknown")
+        cap_info = rule.get("cap")
+        if cap_info:
+            cap_amount = cap_info.get("amount")
+            if cap_amount is not None and reward > cap_amount:
+                reward = cap_amount
+                cap_applied = True
 
-    explanation = f"{int(reward_rate * 100)}% {reward_unit} on {category.replace('_', ' ')}"
+        explanation = f"{int(rule['reward_rate'] * 100)}% cashback on {category.replace('_', ' ')}"
+        if cap_applied:
+            explanation += " (cap applied)"
 
-    if cap_applied:
-        explanation += " (monthly cap applied)"
+        return {
+            "reward_amount": round(reward, 2),
+            "reward_unit": "cashback",
+            "cap_applied": cap_applied,
+            "explanation": explanation,
+            "metadata": {}
+        }
 
+    # CASE 2: Points per spend (e.g. points_per_150)
+    if reward_unit.startswith("points_per_"):
+        spend_basis = int(reward_unit.split("_")[-1])
+        points_per_unit = rule.get("reward_rate", 0)
+
+        units = math.floor(amount / spend_basis)
+        points_earned = units * points_per_unit
+
+        metadata = {
+            "points_earned": points_earned,
+            "spend_basis": spend_basis
+        }
+
+        explanation = f"{points_per_unit} points per ₹{spend_basis} spent"
+
+        return {
+            "reward_amount": points_earned,
+            "reward_unit": "points",
+            "cap_applied": False,
+            "explanation": explanation,
+            "metadata": metadata
+        }
+
+    # Fallback
     return {
-        "reward_amount": round(reward, 2),
-        "reward_unit": reward_unit,
-        "cap_applied": cap_applied,
-        "explanation": explanation
+        "reward_amount": 0,
+        "reward_unit": None,
+        "cap_applied": False,
+        "explanation": "Unsupported reward type",
+        "metadata": {}
     }
