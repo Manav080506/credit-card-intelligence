@@ -3,6 +3,7 @@ import json
 
 from backend.engine.earn_calculator import calculate_reward
 from backend.engine.redeem_calculator import calculate_redemption
+from backend.engine.reason_generator import generate_reasons
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 CARD_DATA_DIR = os.path.join(BASE_DIR, "data", "cards")
@@ -21,7 +22,6 @@ def estimate_monthly_value(card: dict, monthly_spend: dict) -> dict:
     card_id = card["card_id"]
     total_earn_value = 0.0
 
-    # 1) Earn value simulation
     for category, amount in monthly_spend.items():
         try:
             result = calculate_reward(
@@ -30,23 +30,18 @@ def estimate_monthly_value(card: dict, monthly_spend: dict) -> dict:
                 category=category
             )
 
-            # Cashback cards already give ₹
             if result["reward_unit"] == "cashback":
                 total_earn_value += result["reward_amount"]
 
-            # Points cards: approximate conversion via best redemption
-            elif result["reward_unit"].startswith("points"):
-                # crude assumption: 1 point per reward unit
+            elif result["reward_unit"] == "points":
                 points = result["reward_amount"]
                 redemption = calculate_redemption(card_id, int(points))
                 if "best_option" in redemption:
                     total_earn_value += redemption["best_option"]["value"]
 
         except Exception:
-            # category not supported / card missing rules
             continue
 
-    # 2) Annual fee penalty
     annual_fee = card.get("fees", {}).get("annual_fee", 0)
     monthly_fee_penalty = annual_fee / 12 if annual_fee else 0
 
@@ -75,6 +70,10 @@ def recommend_cards(monthly_spend: dict, preferences: dict | None = None) -> dic
 
     best = evaluations[0]
     alternatives = evaluations[1:3]
+
+    best["reasons"] = generate_reasons(best, monthly_spend)
+    for alt in alternatives:
+        alt["reasons"] = generate_reasons(alt, monthly_spend)
 
     return {
         "best_card": best,
