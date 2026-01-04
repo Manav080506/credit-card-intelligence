@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "categories": [
+    {
+      "id": "online_shopping",
+      "label": "Online Shopping",
+      "description": "E-commerce websites and apps like Amazon, Flipkart, Myntra"
+    },
+    {
+      "id": "food_dining",
+      "label": "Food & Dining",
+      "description": "Restaurants, cafes, food delivery apps like Swiggy and Zomato"
+    },
+    {
+      "id": "travel",
+      "label": "Travel",
+      "description": "Flights, hotels, trains, buses, travel booking platforms"
+    },
+    {
+      "id": "fuel",
+      "label": "Fuel",
+      "description": "Petrol, diesel, CNG at fuel stations"
+    },
+    {
+      "id": "utilities",
+      "label": "Utilities",
+      "description": "Electricity, gas, water, mobile, broadband, DTH bills"
+    },
+    {
+      "id": "entertainment",
+      "label": "Entertainment",
+      "description": "Movies, events, OTT platforms, ticket bookings"
+    },
+    {
+      "id": "international",
+      "label": "International Spend",
+      "description": "Any transaction done in foreign currency"
+    },
+    {
+      "id": "wallet_load",
+      "label": "Wallet Load",
+      "description": "Wallet top-ups, P2P loads, prepaid balances"
+    },
+    {
+      "id": "government",
+      "label": "Government Payments",
+      "description": "Taxes, challans, government portals"
+    },
+    {
+      "id": "others",
+      "label": "Others",
+      "description": "Any transaction not fitting above categories"
+    }
+  ]
+}
