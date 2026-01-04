@@ -2,63 +2,30 @@
   "card_id": "hdfc_millennia",
   "card_name": "HDFC Millennia Credit Card",
   "issuer": "HDFC Bank",
-  "network": ["Visa", "Mastercard"],
-  "tier": "mid",
-  "reward_type": "cashback",
-
+  "network": "Visa",
   "fees": {
-    "annual_fee": 1000,
-    "fee_waiver": {
-      "condition": "annual_spend",
-      "threshold": 100000
-    }
+    "joining_fee": 1000,
+    "annual_fee": 1000
   },
-
   "earn_rules": [
     {
       "category": "online_shopping",
       "reward_rate": 0.05,
       "reward_unit": "cashback",
       "cap": {
-        "amount": 1000,
-        "period": "monthly"
+        "period": "monthly",
+        "amount": 1000
       }
     },
     {
-      "category": "food_dining",
-      "reward_rate": 0.05,
-      "reward_unit": "cashback",
-      "cap": {
-        "amount": 1000,
-        "period": "monthly"
-      }
+      "category": "insurance",
+      "reward_rate": 0.01,
+      "reward_unit": "cashback"
     },
     {
       "category": "others",
       "reward_rate": 0.01,
       "reward_unit": "cashback"
     }
-  ],
-
-  "redemption_rules": [
-    {
-      "type": "statement_credit",
-      "value_per_unit": 1,
-      "min_units": 1
-    }
-  ],
-
-  "constraints": {
-    "excluded_categories": ["wallet_load", "government"],
-    "international_markup": 0.035
-  },
-
-  "meta": {
-    "last_verified": "2026-01-04",
-    "sources": [
-      "hdfc_bank_official_site",
-      "paisabazaar"
-    ]
-  }
+  ]
 }
-
