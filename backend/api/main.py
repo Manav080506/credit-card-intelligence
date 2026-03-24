@@ -1,5 +1,12 @@
 from fastapi import FastAPI
 
+from backend.api.routes.earn import router as earn_router
+from backend.api.routes.redeem import router as redeem_router
+from backend.api.routes.recommend import router as recommend_router
+from backend.api.routes.cards import router as cards_router
+from backend.api.routes.optimizer import router as optimizer_router
+from backend.api.routes.compare import router as compare_router
+
 app = FastAPI(
     title="Credit Card Intelligence API",
     version="1.0.0"
@@ -9,23 +16,11 @@ app = FastAPI(
 def health():
     return {"status": "ok"}
 
-from backend.engine.earn_calculator import calculate_reward
-from backend.api.schemas.earn import EarnRequest, EarnResponse
-
-@app.post("/earn", response_model=EarnResponse)
-def earn_rewards(payload: EarnRequest):
-    return calculate_reward(
-        card_id=payload.card_id,
-        amount=payload.amount,
-        category=payload.category
-    )
-
-from backend.engine.redeem_calculator import calculate_redemption
-from backend.api.schemas.redeem import RedeemRequest, RedeemResponse
-
-@app.post("/redeem", response_model=RedeemResponse)
-def redeem_points(payload: RedeemRequest):
-    return calculate_redemption(
-        card_id=payload.card_id,
-        points=payload.points
-    )
+app.include_router(earn_router)
+app.include_router(redeem_router)
+app.include_router(recommend_router)
+app.include_router(cards_router)
+app.include_router(optimizer_router)
+from backend.api.routes.optimizer import router as optimizer_router
+app.include_router(compare_router)
+from backend.api.routes.compare import router as compare_router

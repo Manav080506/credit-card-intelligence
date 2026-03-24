@@ -2,7 +2,9 @@
   "card_id": "hdfc_millennia",
   "card_name": "HDFC Millennia Credit Card",
   "issuer": "HDFC Bank",
-  "network": "Visa",
+  "network": ["Visa", "Mastercard"],
+  "tier": "mid",
+  "reward_type": "cashback",
   "fees": {
     "joining_fee": 1000,
     "annual_fee": 1000
@@ -11,15 +13,6 @@
     {
       "category": "online_shopping",
       "reward_rate": 0.05,
-      "reward_unit": "cashback",
-      "cap": {
-        "period": "monthly",
-        "amount": 1000
-      }
-    },
-    {
-      "category": "insurance",
-      "reward_rate": 0.01,
       "reward_unit": "cashback"
     },
     {
@@ -27,5 +20,12 @@
       "reward_rate": 0.01,
       "reward_unit": "cashback"
     }
-  ]
+  ],
+  "constraints": {
+    "excluded_categories": ["wallet_load", "government"]
+  },
+  "meta": {
+    "last_verified": "2026-01-05",
+    "source": "hdfc_site"
+  }
 }

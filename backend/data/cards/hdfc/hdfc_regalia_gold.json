@@ -1,0 +1,24 @@
+{
+  "card_id": "hdfc_regalia_gold",
+  "card_name": "HDFC Regalia Gold Credit Card",
+  "issuer": "HDFC Bank",
+  "network": ["Visa", "Mastercard"],
+  "tier": "premium",
+  "reward_type": "points",
+  "fees": {
+    "joining_fee": 0,
+    "annual_fee": 0
+  },
+  "earn_rules": [
+    {
+      "category": "others",
+      "reward_rate": 4,
+      "reward_unit": "points_per_150"
+    }
+  ],
+  "constraints": {},
+  "meta": {
+    "last_verified": "2026-01-05",
+    "source": "hdfc_site"
+  }
+}
