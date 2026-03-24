@@ -1,4 +1,16 @@
 {
+  "category": "online_shopping",
+  "reward_rate": 0.05,
+  "reward_unit": "cashback",
+
+  "cap": {
+    "amount": 1000,
+    "period": "monthly"
+  },
+
+  "post_cap_reward_rate": 0.01
+}
+{
   "card_id": "icici_amazon",
   "card_name": "Amazon_ICICI",
   "issuer": "ICICI",

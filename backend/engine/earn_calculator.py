@@ -1,6 +1,5 @@
 from backend.engine.bootstrap import CARDS
-from backend.engine.cap_engine import apply_cap
-
+from backend.engine.cap_engine import apply_reward_cap
 
 def calculate_reward(card_id: str, amount: float, category: str):
 
@@ -54,8 +53,12 @@ def calculate_reward(card_id: str, amount: float, category: str):
     best = sorted(candidates, key=lambda x: x["reward_rate"], reverse=True)[0]
 
     if best["reward_unit"] == "points_per_150":
-        reward = (amount / 150) * best["reward_rate"]
-        effective_rate = reward / amount
+         reward = apply_reward_cap(
+    spend=amount,
+    reward_rate=rule["reward_rate"],
+    cap=rule.get("cap"),
+    post_cap_rate=rule.get("post_cap_reward_rate")
+)
 
     else:
         reward = amount * best["reward_rate"]
