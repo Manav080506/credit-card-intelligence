@@ -8,6 +8,7 @@ from backend.api.routes.optimizer import router as optimizer_router
 from backend.api.routes.compare import router as compare_router
 from backend.api.routes.compare_optimizer import router as compare_optimizer_router
 from backend.api.routes.combo_optimizer import router as combo_optimizer_router
+from backend.api.routes.gap_recommend import router as gap_recommend_router
 
 app = FastAPI(
     title="Credit Card Intelligence API",
@@ -30,3 +31,4 @@ app.include_router(optimizer_router)
 app.include_router(compare_router)
 app.include_router(compare_optimizer_router)
 app.include_router(combo_optimizer_router)
+app.include_router(gap_recommend_router)
