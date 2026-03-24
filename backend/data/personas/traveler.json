@@ -1,0 +1,12 @@
+{
+ "persona_id":"traveler",
+
+ "monthly_spend":{
+
+  "travel":25000,
+  "dining":8000,
+  "online_shopping":10000,
+  "others":7000
+ }
+
+}

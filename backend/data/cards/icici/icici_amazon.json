@@ -1,38 +1,51 @@
 {
-  "category": "online_shopping",
-  "reward_rate": 0.05,
-  "reward_unit": "cashback",
-
-  "cap": {
-    "amount": 1000,
-    "period": "monthly"
-  },
-
-  "post_cap_reward_rate": 0.01
-}
-{
   "card_id": "icici_amazon",
-  "card_name": "Amazon_ICICI",
+  "card_name": "Amazon ICICI Credit Card",
   "issuer": "ICICI",
-  "network": [
-    "Visa"
-  ],
+  "network": ["Visa"],
   "tier": "mid",
+
   "reward_type": "cashback",
+
   "fees": {
     "joining_fee": 0,
     "annual_fee": 0
   },
+
   "earn_rules": [
+
+    {
+      "category": "online_shopping",
+      "reward_rate": 0.05,
+      "reward_unit": "cashback",
+
+      "cap": {
+        "amount": 1000,
+        "period": "monthly"
+      },
+
+      "post_cap_reward_rate": 0.01
+    },
+
+    {
+      "category": "groceries",
+      "reward_rate": 0.02,
+      "reward_unit": "cashback"
+    },
+
     {
       "category": "others",
       "reward_rate": 0.01,
       "reward_unit": "cashback"
     }
+
   ],
+
   "constraints": {},
+
   "meta": {
     "last_verified": "2026-03-24",
     "source": "manual_entry"
   }
+
 }

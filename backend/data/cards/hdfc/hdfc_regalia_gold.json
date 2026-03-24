@@ -1,24 +1,59 @@
 {
   "card_id": "hdfc_regalia_gold",
-  "card_name": "HDFC Regalia Gold Credit Card",
-  "issuer": "HDFC Bank",
+
+  "card_name": "HDFC Regalia Gold",
+
+  "issuer": "HDFC",
+
   "network": ["Visa", "Mastercard"],
+
   "tier": "premium",
+
   "reward_type": "points",
+
+  "point_value": 0.5,
+
   "fees": {
     "joining_fee": 0,
-    "annual_fee": 0
+    "annual_fee": 2500
   },
+
   "earn_rules": [
+
+    {
+      "category": "travel",
+      "reward_rate": 5,
+      "reward_unit": "points_per_150"
+    },
+
+    {
+      "category": "dining",
+      "reward_rate": 4,
+      "reward_unit": "points_per_150"
+    },
+
     {
       "category": "others",
       "reward_rate": 4,
       "reward_unit": "points_per_150"
     }
+
   ],
+
+  "milestones": [
+
+    {
+      "spend_threshold": 300000,
+      "reward_value": 5000
+    }
+
+  ],
+
   "constraints": {},
+
   "meta": {
-    "last_verified": "2026-01-05",
-    "source": "hdfc_site"
+    "last_verified": "2026-03-24",
+    "source": "manual_entry"
   }
+
 }

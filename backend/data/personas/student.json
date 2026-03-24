@@ -1,0 +1,11 @@
+{
+ "persona_id":"student",
+
+ "monthly_spend":{
+
+  "online_shopping":6000,
+  "dining":4000,
+  "others":3000
+ }
+
+}

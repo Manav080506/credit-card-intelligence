@@ -1,0 +1,12 @@
+{
+ "persona_id":"family",
+
+ "monthly_spend":{
+
+  "groceries":15000,
+  "fuel":7000,
+  "online_shopping":8000,
+  "others":6000
+ }
+
+}

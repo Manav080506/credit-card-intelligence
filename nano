@@ -1,0 +1,62 @@
+from backend.engine.wallet_optimizer import optimize_wallet
+
+
+def simulate_spend_change(
+    card_ids,
+    current_spend,
+    new_spend
+):
+
+    current_result = optimize_wallet(
+        card_ids,
+        current_spend
+    )
+
+
+    new_result = optimize_wallet(
+        card_ids,
+        new_spend
+    )
+
+
+    reward_change = (
+
+        new_result["net_yearly_value"]
+
+        - current_result["net_yearly_value"]
+
+    )
+
+
+    score_change = (
+
+        new_result["wallet_score"]
+
+        - current_result["wallet_score"]
+
+    )
+
+
+    return {
+
+        "current_yearly_value":
+
+            current_result["net_yearly_value"],
+
+        "new_yearly_value":
+
+            new_result["net_yearly_value"],
+
+        "reward_change":
+
+            round(reward_change, 2),
+
+        "wallet_score_change":
+
+            round(score_change, 2),
+
+        "new_best_cards":
+
+            new_result["best_card_per_category"]
+
+    }
