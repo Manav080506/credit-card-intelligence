@@ -1,6 +1,6 @@
 from backend.engine.reward_stacker import calculate_stacked_rewards
 from backend.engine.bootstrap import CARDS
-
+from backend.engine.reward_value_converter import convert_reward_to_value
 
 def optimize_wallet(card_ids, monthly_spend):
 
@@ -20,7 +20,14 @@ def optimize_wallet(card_ids, monthly_spend):
                 category=category
             )
 
-            reward_value = result["card_reward"]["reward_amount"]
+            raw_reward = result["card_reward"]["reward_amount"]
+
+            reward_unit = result["card_reward"]["reward_unit"]
+
+            reward_value = convert_reward_to_value(
+                raw_reward,
+                reward_unit
+            )
 
             if reward_value > best_value:
                 best_value = reward_value
