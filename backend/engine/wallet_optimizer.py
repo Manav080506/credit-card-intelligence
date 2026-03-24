@@ -1,6 +1,7 @@
 from backend.engine.reward_stacker import calculate_stacked_rewards
 from backend.engine.bootstrap import CARDS
 from backend.engine.reward_value_converter import convert_reward_to_value
+from backend.engine.wallet_scorer import calculate_wallet_score
 
 def optimize_wallet(card_ids, monthly_spend):
 
@@ -53,10 +54,26 @@ def optimize_wallet(card_ids, monthly_spend):
     yearly_reward = total_monthly_reward * 12
     net_yearly_value = yearly_reward - yearly_fee_total
 
+    score = calculate_wallet_score({
+    "total_monthly_reward": total_monthly_reward,
+    "net_yearly_value": net_yearly_value,
+    "best_card_per_category": best_per_category
+   })
+
     return {
-        "best_card_per_category": best_per_category,
-        "total_monthly_reward": round(total_monthly_reward, 2),
-        "estimated_yearly_reward": round(yearly_reward, 2),
-        "estimated_annual_fees": yearly_fee_total,
-        "net_yearly_value": round(net_yearly_value, 2)
-    }
+
+    "best_card_per_category": best_per_category,
+
+    "total_monthly_reward": round(total_monthly_reward, 2),
+
+    "estimated_yearly_reward": round(yearly_reward, 2),
+
+    "estimated_annual_fees": yearly_fee_total,
+
+    "net_yearly_value": round(net_yearly_value, 2),
+
+    "wallet_score": score["wallet_score"],
+
+    "score_breakdown": score["component_scores"]
+
+}
