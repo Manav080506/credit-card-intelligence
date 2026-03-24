@@ -2,6 +2,7 @@ import csv
 
 from backend.engine.transaction_optimizer import best_card_for_transaction
 
+from backend.engine.merchant_classifier import classify_merchant
 
 def analyze_statement(
     card_ids,

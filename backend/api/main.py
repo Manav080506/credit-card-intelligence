@@ -15,6 +15,8 @@ from backend.api.routes.wallet_advisor import router as wallet_advisor_router
 from backend.api.routes.combo_optimizer_v2 import router as combo_optimizer_v2_router
 from backend.api.routes.statement_analyzer import router as statement_router
 from backend.api.routes.spend_simulator import router as simulator_router
+from backend.api.routes.full_analysis import router as full_router
+from backend.api.routes.merchant_classifier import router as merchant_router
 
 app = FastAPI(
     title="Credit Card Intelligence API",
@@ -44,3 +46,5 @@ app.include_router(wallet_advisor_router)
 app.include_router(combo_optimizer_v2_router)
 app.include_router(statement_router)
 app.include_router(simulator_router)
+app.include_router(full_router)
+app.include_router(merchant_router)
