@@ -1,0 +1,74 @@
+{
+  "card_id": "kotak_league_platinum",
+  "card_name": "Kotak League Platinum Credit Card",
+  "issuer": "Kotak",
+  "network": ["Visa"],
+  "tier": "entry",
+  "reward_type": "cashback",
+  "fees": {
+    "joining_fee": 499,
+    "annual_fee": 499
+  },
+  "earn_rules": [
+    {
+      "category": "dining",
+      "reward_rate": 0.04,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 500,
+        "period": "monthly"
+      },
+      "cap_amount": 500,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
+    },
+    {
+      "category": "entertainment",
+      "reward_rate": 0.04,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 500,
+        "period": "monthly"
+      },
+      "cap_amount": 500,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
+    },
+    {
+      "category": "fuel",
+      "reward_rate": 0.02,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 250,
+        "period": "monthly"
+      },
+      "cap_amount": 250,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.005
+    },
+    {
+      "category": "utilities",
+      "reward_rate": 0.02,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 250,
+        "period": "monthly"
+      },
+      "cap_amount": 250,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.005
+    },
+    {
+      "category": "others",
+      "reward_rate": 0.01,
+      "reward_unit": "cashback"
+    }
+  ],
+  "constraints": {
+    "excluded_categories": []
+  },
+  "meta": {
+    "last_verified": "2026-03-27",
+    "source": "manual_curated"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cashback_focused": [
+    "SBI Cashback",
+    "HDFC Millennia",
+    "Axis Ace",
+    "HSBC Cashback",
+    "Amazon ICICI",
+    "Flipkart Axis",
+    "YES Cashback",
+    "RBL Shoprite",
+    "Standard Chartered Smart",
+    "HDFC Moneyback+"
+  ],
+  "travel_focused": [
+    "Axis Atlas",
+    "Axis Magnus",
+    "HDFC Diners Black",
+    "HDFC Infinia",
+    "Amex Platinum",
+    "ICICI Emeralde",
+    "YES Marquee",
+    "IndusInd Pioneer",
+    "Kotak White Reserve",
+    "HSBC Premier"
+  ],
+  "beginner_cards": [
+    "HDFC Freedom",
+    "SBI SimplySave",
+    "ICICI Coral",
+    "Axis MyZone",
+    "Kotak 811",
+    "YES Prosperity Edge",
+    "RBL Platinum Delight"
+  ],
+  "co_branded": [
+    "Amazon ICICI",
+    "Flipkart Axis",
+    "Swiggy HDFC",
+    "IRCTC SBI",
+    "MakeMyTrip ICICI",
+    "Vistara Axis",
+    "Marriott HDFC"
+  ],
+  "estimated_total_cards_india": 350,
+  "notes": "Seed universe list for automated card ingestion expansion toward 200+ and beyond."
+}

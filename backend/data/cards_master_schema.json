@@ -1,0 +1,45 @@
+{
+  "id": "axis_magnus",
+  "bank": "Axis Bank",
+  "network": "Visa",
+  "segment": "premium",
+  "annual_fee": 10000,
+  "joining_fee": 10000,
+  "reward_currency": "points",
+  "reward_conversion_value": 0.4,
+  "reward_rules": [
+    {
+      "category": "travel",
+      "reward_rate": 0.05,
+      "cap": 5000
+    },
+    {
+      "category": "dining",
+      "reward_rate": 0.03
+    },
+    {
+      "category": "online",
+      "reward_rate": 0.03
+    },
+    {
+      "category": "utilities",
+      "reward_rate": 0.01
+    }
+  ],
+  "benefits": {
+    "lounge_domestic": 12,
+    "lounge_international": 6,
+    "forex_markup": 2,
+    "golf_games": 4
+  },
+  "eligibility": {
+    "min_income": 1500000,
+    "credit_score": 750
+  },
+  "tags": [
+    "premium",
+    "travel",
+    "high-reward"
+  ],
+  "last_updated": "2026-03-01"
+}

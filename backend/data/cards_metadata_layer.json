@@ -1,0 +1,102 @@
+[
+  {
+    "id": "sbi_cashback",
+    "display_name": "SBI Cashback Card",
+    "network": "Visa",
+    "annual_fee": 999,
+    "lounge_access": false,
+    "forex_markup": 3.5,
+    "welcome_bonus": 500,
+    "best_for": ["online shopping"]
+  },
+  {
+    "id": "hdfc_millennia",
+    "display_name": "HDFC Millennia",
+    "network": "Visa",
+    "annual_fee": 1000,
+    "lounge_access": true,
+    "forex_markup": 3.5,
+    "welcome_bonus": 0,
+    "best_for": ["online", "dining"]
+  },
+  {
+    "id": "icici_amazon_pay",
+    "display_name": "ICICI Amazon Pay",
+    "network": "Visa",
+    "annual_fee": 0,
+    "lounge_access": false,
+    "forex_markup": 3.5,
+    "welcome_bonus": 0,
+    "best_for": ["amazon", "online"]
+  },
+  {
+    "id": "axis_ace",
+    "display_name": "Axis Ace",
+    "network": "Mastercard",
+    "annual_fee": 499,
+    "lounge_access": false,
+    "forex_markup": 3.5,
+    "welcome_bonus": 0,
+    "best_for": ["utilities"]
+  },
+  {
+    "id": "axis_atlas",
+    "display_name": "Axis Atlas",
+    "network": "Visa",
+    "annual_fee": 5000,
+    "lounge_access": true,
+    "forex_markup": 2.0,
+    "welcome_bonus": 0,
+    "best_for": ["travel"]
+  },
+  {
+    "id": "amex_mrcc",
+    "display_name": "Amex MRCC",
+    "network": "Amex",
+    "annual_fee": 4500,
+    "lounge_access": true,
+    "forex_markup": 3.5,
+    "welcome_bonus": 0,
+    "best_for": ["points", "dining"]
+  },
+  {
+    "id": "axis_magnus",
+    "display_name": "Axis Magnus",
+    "network": "Visa",
+    "annual_fee": 10000,
+    "lounge_access": true,
+    "forex_markup": 2.0,
+    "welcome_bonus": 0,
+    "best_for": ["travel", "premium"]
+  },
+  {
+    "id": "hdfc_diners_black",
+    "display_name": "HDFC Diners Black",
+    "network": "Diners Club",
+    "annual_fee": 10000,
+    "lounge_access": true,
+    "forex_markup": 2.0,
+    "welcome_bonus": 0,
+    "best_for": ["travel", "dining"]
+  },
+  {
+    "id": "hsbc_premier",
+    "display_name": "HSBC Premier",
+    "network": "Visa",
+    "annual_fee": 12000,
+    "lounge_access": true,
+    "forex_markup": 2.0,
+    "welcome_bonus": 0,
+    "best_for": ["travel", "premium"]
+  },
+  {
+    "id": "indusind_pinnacle",
+    "display_name": "IndusInd Pinnacle",
+    "network": "Visa",
+    "annual_fee": 0,
+    "lounge_access": true,
+    "forex_markup": 1.8,
+    "welcome_bonus": 0,
+    "best_for": ["travel", "lounge"]
+  }
+]

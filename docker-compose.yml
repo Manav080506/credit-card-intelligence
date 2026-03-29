@@ -1,0 +1,76 @@
+version: "3.9"
+
+services:
+  # FastAPI Backend
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: credit-card-api
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://admin:admin@postgres:5432/cards
+      REDIS_URL: redis://redis:6379/0
+      PYTHONUNBUFFERED: 1
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - fintech-network
+    restart: unless-stopped
+    volumes:
+      - ./backend:/app/backend
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: credit-card-postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: cards
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/schemas/cards.sql:/docker-entrypoint-initdb.d/01-cards.sql
+      - ./backend/schemas/logs.sql:/docker-entrypoint-initdb.d/02-logs.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - fintech-network
+    restart: unless-stopped
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: credit-card-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - fintech-network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+networks:
+  fintech-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local

@@ -1,7 +1,8 @@
 from fastapi import APIRouter
-from pydantic import BaseModel
-from typing import List
 
+from pydantic import BaseModel
+
+from typing import List, Optional
 
 from backend.engine.statement_analyzer import analyze_statement
 
@@ -21,7 +22,7 @@ class Transaction(BaseModel):
 
     amount: float
 
-    category: str
+    category: Optional[str] = None
 
 
 class StatementRequest(BaseModel):
@@ -32,16 +33,23 @@ class StatementRequest(BaseModel):
 
 
 @router.post("")
-def analyze(payload: StatementRequest):
+
+def analyze(
+
+    payload: StatementRequest
+
+):
 
     return analyze_statement(
 
         card_ids=payload.card_ids,
 
         transactions=[
-            t.dict()
 
-            for t in payload.transactions
+            txn.dict()
+
+            for txn in payload.transactions
+
         ]
 
     )

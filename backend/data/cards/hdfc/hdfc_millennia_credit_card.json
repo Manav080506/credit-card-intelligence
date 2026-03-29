@@ -1,0 +1,53 @@
+{
+  "card_id": "hdfc_millennia_credit_card",
+  "card_name": "HDFC Millennia Credit Card",
+  "issuer": "hdfc",
+  "network": [
+    "Visa"
+  ],
+  "tier": "unknown",
+  "reward_type": "cashback",
+  "fees": {
+    "joining_fee": 0,
+    "annual_fee": 1000
+  },
+  "earn_rules": [
+    {
+      "category": "online_shopping",
+      "reward_rate": 0.05,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 1000,
+        "period": "monthly"
+      },
+      "cap_amount": 1000,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
+    },
+    {
+      "category": "dining",
+      "reward_rate": 0.02,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 400,
+        "period": "monthly"
+      },
+      "cap_amount": 400,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
+    },
+    {
+      "category": "others",
+      "reward_rate": 0.03,
+      "reward_unit": "cashback"
+    }
+  ],
+  "constraints": {
+    "excluded_categories": [],
+    "monthly_cap": null
+  },
+  "meta": {
+    "source": "manual_curated",
+    "confidence": 0.6
+  }
+}

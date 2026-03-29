@@ -1,77 +1,126 @@
-from backend.engine.wallet_optimizer import optimize_wallet
-from backend.engine.bootstrap import CARDS
+from backend.engine.card_registry import CARDS
 
 
-def recommend_card_for_gaps(current_cards, monthly_spend):
+def recommend_card_for_gap(
 
-    baseline = optimize_wallet(
+    wallet_analysis,
 
-        card_ids=current_cards,
+    monthly_spend
 
-        monthly_spend=monthly_spend
+):
+
+    coverage = wallet_analysis.get(
+
+        "coverage_analysis",
+
+        {}
+
+    )
+
+    missing_categories = coverage.get(
+
+        "missing_categories",
+
+        []
 
     )
 
 
-    baseline_score = baseline["wallet_score"]
+    if not missing_categories:
 
-    best_improvement = None
+        return {
 
+            "message":
 
-    for candidate in CARDS.keys():
+            "Your wallet already has strong coverage."
 
-        if candidate in current_cards:
-            continue
-
-
-        new_wallet = optimize_wallet(
-
-            card_ids=current_cards + [candidate],
-
-            monthly_spend=monthly_spend
-
-        )
+        }
 
 
-        score_gain = (
-
-            new_wallet["wallet_score"]
-
-            - baseline_score
-
-        )
+    target_category = missing_categories[0]
 
 
-        yearly_gain = (
+    best_card = None
 
-            new_wallet["net_yearly_value"]
+    best_rate = 0
 
-            - baseline["net_yearly_value"]
+
+    for card_id, card in CARDS.items():
+
+        rules = card.get(
+
+            "earn_rules",
+
+            []
 
         )
 
 
-        if (
+        for rule in rules:
 
-            best_improvement is None
+            if rule.get(
 
-            or score_gain > best_improvement["score_gain"]
+                "category"
 
-        ):
-
-            best_improvement = {
-
-                "recommended_card": candidate,
-
-                "score_gain": round(score_gain, 2),
-
-                "yearly_value_gain": round(yearly_gain, 2),
-
-                "new_wallet_score": new_wallet["wallet_score"],
-
-                "new_net_yearly_value": new_wallet["net_yearly_value"]
-
-            }
+            ) == target_category:
 
 
-    return best_improvement
+                rate = rule.get(
+
+                    "reward_rate",
+
+                    0
+
+                )
+
+
+                if rate > best_rate:
+
+                    best_rate = rate
+
+
+                    best_card = {
+
+                        "card_id": card_id,
+
+                        "reason":
+
+                        f"Strong rewards for {target_category}",
+
+                        "reward_rate": rate
+
+                    }
+
+
+    if not best_card:
+
+        return {
+
+            "message":
+
+            f"No optimized card found for {target_category}"
+
+        }
+
+
+    return best_card
+
+
+
+# backward compatibility for old routes
+
+def recommend_card_for_gaps(
+
+    wallet_analysis,
+
+    monthly_spend
+
+):
+
+    return recommend_card_for_gap(
+
+        wallet_analysis,
+
+        monthly_spend
+
+    )

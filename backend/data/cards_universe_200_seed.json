@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "sbi_cashback",
+    "bank": "SBI",
+    "segment": "cashback"
+  },
+  {
+    "id": "sbi_simplyclick",
+    "bank": "SBI",
+    "segment": "online"
+  },
+  {
+    "id": "sbi_simplysave",
+    "bank": "SBI",
+    "segment": "entry"
+  },
+  {
+    "id": "sbi_prime",
+    "bank": "SBI",
+    "segment": "premium"
+  },
+  {
+    "id": "sbi_elite",
+    "bank": "SBI",
+    "segment": "premium"
+  },
+  {
+    "id": "sbi_irctc",
+    "bank": "SBI",
+    "segment": "travel"
+  },
+  {
+    "id": "axis_ace",
+    "bank": "Axis",
+    "segment": "cashback"
+  },
+  {
+    "id": "axis_magnus",
+    "bank": "Axis",
+    "segment": "premium"
+  },
+  {
+    "id": "axis_atlas",
+    "bank": "Axis",
+    "segment": "travel"
+  },
+  {
+    "id": "axis_flipkart",
+    "bank": "Axis",
+    "segment": "co-branded"
+  },
+  {
+    "id": "axis_vistara",
+    "bank": "Axis",
+    "segment": "travel"
+  },
+  {
+    "id": "axis_neo",
+    "bank": "Axis",
+    "segment": "entry"
+  },
+  {
+    "id": "hdfc_millennia",
+    "bank": "HDFC",
+    "segment": "cashback"
+  },
+  {
+    "id": "hdfc_moneyback",
+    "bank": "HDFC",
+    "segment": "entry"
+  },
+  {
+    "id": "hdfc_regalia_gold",
+    "bank": "HDFC",
+    "segment": "travel"
+  },
+  {
+    "id": "hdfc_diners_black",
+    "bank": "HDFC",
+    "segment": "premium"
+  },
+  {
+    "id": "hdfc_infinia",
+    "bank": "HDFC",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "hdfc_swiggy",
+    "bank": "HDFC",
+    "segment": "co-branded"
+  },
+  {
+    "id": "icici_amazon",
+    "bank": "ICICI",
+    "segment": "cashback"
+  },
+  {
+    "id": "icici_coral",
+    "bank": "ICICI",
+    "segment": "entry"
+  },
+  {
+    "id": "icici_sapphiro",
+    "bank": "ICICI",
+    "segment": "premium"
+  },
+  {
+    "id": "icici_emeralde",
+    "bank": "ICICI",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "amex_mrcc",
+    "bank": "AMEX",
+    "segment": "points"
+  },
+  {
+    "id": "amex_platinum_travel",
+    "bank": "AMEX",
+    "segment": "travel"
+  },
+  {
+    "id": "amex_gold_charge",
+    "bank": "AMEX",
+    "segment": "premium"
+  },
+  {
+    "id": "hsbc_cashback",
+    "bank": "HSBC",
+    "segment": "cashback"
+  },
+  {
+    "id": "hsbc_premier",
+    "bank": "HSBC",
+    "segment": "premium"
+  },
+  {
+    "id": "yes_marquee",
+    "bank": "YES",
+    "segment": "premium"
+  },
+  {
+    "id": "yes_prosperity",
+    "bank": "YES",
+    "segment": "entry"
+  },
+  {
+    "id": "rbl_world_safari",
+    "bank": "RBL",
+    "segment": "travel"
+  },
+  {
+    "id": "rbl_shoprite",
+    "bank": "RBL",
+    "segment": "cashback"
+  },
+  {
+    "id": "kotak_league_platinum",
+    "bank": "Kotak",
+    "segment": "entry"
+  },
+  {
+    "id": "kotak_white_reserve",
+    "bank": "Kotak",
+    "segment": "premium"
+  },
+  {
+    "id": "indusind_legend",
+    "bank": "IndusInd",
+    "segment": "entry"
+  },
+  {
+    "id": "indusind_pinnacle",
+    "bank": "IndusInd",
+    "segment": "premium"
+  },
+  {
+    "id": "sbi_entry_1",
+    "bank": "SBI",
+    "segment": "entry"
+  },
+  {
+    "id": "sbi_cashback_1",
+    "bank": "SBI",
+    "segment": "cashback"
+  },
+  {
+    "id": "sbi_online_1",
+    "bank": "SBI",
+    "segment": "online"
+  },
+  {
+    "id": "sbi_travel_1",
+    "bank": "SBI",
+    "segment": "travel"
+  },
+  {
+    "id": "sbi_premium_1",
+    "bank": "SBI",
+    "segment": "premium"
+  },
+  {
+    "id": "sbi_co-branded_1",
+    "bank": "SBI",
+    "segment": "co-branded"
+  },
+  {
+    "id": "sbi_points_1",
+    "bank": "SBI",
+    "segment": "points"
+  },
+  {
+    "id": "sbi_ultra-premium_1",
+    "bank": "SBI",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "sbi_fuel_1",
+    "bank": "SBI",
+    "segment": "fuel"
+  },
+  {
+    "id": "sbi_business_1",
+    "bank": "SBI",
+    "segment": "business"
+  },
+  {
+    "id": "axis_entry_1",
+    "bank": "Axis",
+    "segment": "entry"
+  },
+  {
+    "id": "axis_cashback_1",
+    "bank": "Axis",
+    "segment": "cashback"
+  },
+  {
+    "id": "axis_online_1",
+    "bank": "Axis",
+    "segment": "online"
+  },
+  {
+    "id": "axis_travel_1",
+    "bank": "Axis",
+    "segment": "travel"
+  },
+  {
+    "id": "axis_premium_1",
+    "bank": "Axis",
+    "segment": "premium"
+  },
+  {
+    "id": "axis_co-branded_1",
+    "bank": "Axis",
+    "segment": "co-branded"
+  },
+  {
+    "id": "axis_points_1",
+    "bank": "Axis",
+    "segment": "points"
+  },
+  {
+    "id": "axis_ultra-premium_1",
+    "bank": "Axis",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "axis_fuel_1",
+    "bank": "Axis",
+    "segment": "fuel"
+  },
+  {
+    "id": "axis_business_1",
+    "bank": "Axis",
+    "segment": "business"
+  },
+  {
+    "id": "hdfc_entry_1",
+    "bank": "HDFC",
+    "segment": "entry"
+  },
+  {
+    "id": "hdfc_cashback_1",
+    "bank": "HDFC",
+    "segment": "cashback"
+  },
+  {
+    "id": "hdfc_online_1",
+    "bank": "HDFC",
+    "segment": "online"
+  },
+  {
+    "id": "hdfc_travel_1",
+    "bank": "HDFC",
+    "segment": "travel"
+  },
+  {
+    "id": "hdfc_premium_1",
+    "bank": "HDFC",
+    "segment": "premium"
+  },
+  {
+    "id": "hdfc_co-branded_1",
+    "bank": "HDFC",
+    "segment": "co-branded"
+  },
+  {
+    "id": "hdfc_points_1",
+    "bank": "HDFC",
+    "segment": "points"
+  },
+  {
+    "id": "hdfc_ultra-premium_1",
+    "bank": "HDFC",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "hdfc_fuel_1",
+    "bank": "HDFC",
+    "segment": "fuel"
+  },
+  {
+    "id": "hdfc_business_1",
+    "bank": "HDFC",
+    "segment": "business"
+  },
+  {
+    "id": "icici_entry_1",
+    "bank": "ICICI",
+    "segment": "entry"
+  },
+  {
+    "id": "icici_cashback_1",
+    "bank": "ICICI",
+    "segment": "cashback"
+  },
+  {
+    "id": "icici_online_1",
+    "bank": "ICICI",
+    "segment": "online"
+  },
+  {
+    "id": "icici_travel_1",
+    "bank": "ICICI",
+    "segment": "travel"
+  },
+  {
+    "id": "icici_premium_1",
+    "bank": "ICICI",
+    "segment": "premium"
+  },
+  {
+    "id": "icici_co-branded_1",
+    "bank": "ICICI",
+    "segment": "co-branded"
+  },
+  {
+    "id": "icici_points_1",
+    "bank": "ICICI",
+    "segment": "points"
+  },
+  {
+    "id": "icici_ultra-premium_1",
+    "bank": "ICICI",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "icici_fuel_1",
+    "bank": "ICICI",
+    "segment": "fuel"
+  },
+  {
+    "id": "icici_business_1",
+    "bank": "ICICI",
+    "segment": "business"
+  },
+  {
+    "id": "amex_entry_1",
+    "bank": "AMEX",
+    "segment": "entry"
+  },
+  {
+    "id": "amex_cashback_1",
+    "bank": "AMEX",
+    "segment": "cashback"
+  },
+  {
+    "id": "amex_online_1",
+    "bank": "AMEX",
+    "segment": "online"
+  },
+  {
+    "id": "amex_travel_1",
+    "bank": "AMEX",
+    "segment": "travel"
+  },
+  {
+    "id": "amex_premium_1",
+    "bank": "AMEX",
+    "segment": "premium"
+  },
+  {
+    "id": "amex_co-branded_1",
+    "bank": "AMEX",
+    "segment": "co-branded"
+  },
+  {
+    "id": "amex_points_1",
+    "bank": "AMEX",
+    "segment": "points"
+  },
+  {
+    "id": "amex_ultra-premium_1",
+    "bank": "AMEX",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "amex_fuel_1",
+    "bank": "AMEX",
+    "segment": "fuel"
+  },
+  {
+    "id": "amex_business_1",
+    "bank": "AMEX",
+    "segment": "business"
+  },
+  {
+    "id": "hsbc_entry_1",
+    "bank": "HSBC",
+    "segment": "entry"
+  },
+  {
+    "id": "hsbc_cashback_1",
+    "bank": "HSBC",
+    "segment": "cashback"
+  },
+  {
+    "id": "hsbc_online_1",
+    "bank": "HSBC",
+    "segment": "online"
+  },
+  {
+    "id": "hsbc_travel_1",
+    "bank": "HSBC",
+    "segment": "travel"
+  },
+  {
+    "id": "hsbc_premium_1",
+    "bank": "HSBC",
+    "segment": "premium"
+  },
+  {
+    "id": "hsbc_co-branded_1",
+    "bank": "HSBC",
+    "segment": "co-branded"
+  },
+  {
+    "id": "hsbc_points_1",
+    "bank": "HSBC",
+    "segment": "points"
+  },
+  {
+    "id": "hsbc_ultra-premium_1",
+    "bank": "HSBC",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "hsbc_fuel_1",
+    "bank": "HSBC",
+    "segment": "fuel"
+  },
+  {
+    "id": "hsbc_business_1",
+    "bank": "HSBC",
+    "segment": "business"
+  },
+  {
+    "id": "yes_entry_1",
+    "bank": "YES",
+    "segment": "entry"
+  },
+  {
+    "id": "yes_cashback_1",
+    "bank": "YES",
+    "segment": "cashback"
+  },
+  {
+    "id": "yes_online_1",
+    "bank": "YES",
+    "segment": "online"
+  },
+  {
+    "id": "yes_travel_1",
+    "bank": "YES",
+    "segment": "travel"
+  },
+  {
+    "id": "yes_premium_1",
+    "bank": "YES",
+    "segment": "premium"
+  },
+  {
+    "id": "yes_co-branded_1",
+    "bank": "YES",
+    "segment": "co-branded"
+  },
+  {
+    "id": "yes_points_1",
+    "bank": "YES",
+    "segment": "points"
+  },
+  {
+    "id": "yes_ultra-premium_1",
+    "bank": "YES",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "yes_fuel_1",
+    "bank": "YES",
+    "segment": "fuel"
+  },
+  {
+    "id": "yes_business_1",
+    "bank": "YES",
+    "segment": "business"
+  },
+  {
+    "id": "rbl_entry_1",
+    "bank": "RBL",
+    "segment": "entry"
+  },
+  {
+    "id": "rbl_cashback_1",
+    "bank": "RBL",
+    "segment": "cashback"
+  },
+  {
+    "id": "rbl_online_1",
+    "bank": "RBL",
+    "segment": "online"
+  },
+  {
+    "id": "rbl_travel_1",
+    "bank": "RBL",
+    "segment": "travel"
+  },
+  {
+    "id": "rbl_premium_1",
+    "bank": "RBL",
+    "segment": "premium"
+  },
+  {
+    "id": "rbl_co-branded_1",
+    "bank": "RBL",
+    "segment": "co-branded"
+  },
+  {
+    "id": "rbl_points_1",
+    "bank": "RBL",
+    "segment": "points"
+  },
+  {
+    "id": "rbl_ultra-premium_1",
+    "bank": "RBL",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "rbl_fuel_1",
+    "bank": "RBL",
+    "segment": "fuel"
+  },
+  {
+    "id": "rbl_business_1",
+    "bank": "RBL",
+    "segment": "business"
+  },
+  {
+    "id": "kotak_entry_1",
+    "bank": "Kotak",
+    "segment": "entry"
+  },
+  {
+    "id": "kotak_cashback_1",
+    "bank": "Kotak",
+    "segment": "cashback"
+  },
+  {
+    "id": "kotak_online_1",
+    "bank": "Kotak",
+    "segment": "online"
+  },
+  {
+    "id": "kotak_travel_1",
+    "bank": "Kotak",
+    "segment": "travel"
+  },
+  {
+    "id": "kotak_premium_1",
+    "bank": "Kotak",
+    "segment": "premium"
+  },
+  {
+    "id": "kotak_co-branded_1",
+    "bank": "Kotak",
+    "segment": "co-branded"
+  },
+  {
+    "id": "kotak_points_1",
+    "bank": "Kotak",
+    "segment": "points"
+  },
+  {
+    "id": "kotak_ultra-premium_1",
+    "bank": "Kotak",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "kotak_fuel_1",
+    "bank": "Kotak",
+    "segment": "fuel"
+  },
+  {
+    "id": "kotak_business_1",
+    "bank": "Kotak",
+    "segment": "business"
+  },
+  {
+    "id": "indusind_entry_1",
+    "bank": "IndusInd",
+    "segment": "entry"
+  },
+  {
+    "id": "indusind_cashback_1",
+    "bank": "IndusInd",
+    "segment": "cashback"
+  },
+  {
+    "id": "indusind_online_1",
+    "bank": "IndusInd",
+    "segment": "online"
+  },
+  {
+    "id": "indusind_travel_1",
+    "bank": "IndusInd",
+    "segment": "travel"
+  },
+  {
+    "id": "indusind_premium_1",
+    "bank": "IndusInd",
+    "segment": "premium"
+  },
+  {
+    "id": "indusind_co-branded_1",
+    "bank": "IndusInd",
+    "segment": "co-branded"
+  },
+  {
+    "id": "indusind_points_1",
+    "bank": "IndusInd",
+    "segment": "points"
+  },
+  {
+    "id": "indusind_ultra-premium_1",
+    "bank": "IndusInd",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "indusind_fuel_1",
+    "bank": "IndusInd",
+    "segment": "fuel"
+  },
+  {
+    "id": "indusind_business_1",
+    "bank": "IndusInd",
+    "segment": "business"
+  },
+  {
+    "id": "au_entry_1",
+    "bank": "AU",
+    "segment": "entry"
+  },
+  {
+    "id": "au_cashback_1",
+    "bank": "AU",
+    "segment": "cashback"
+  },
+  {
+    "id": "au_online_1",
+    "bank": "AU",
+    "segment": "online"
+  },
+  {
+    "id": "au_travel_1",
+    "bank": "AU",
+    "segment": "travel"
+  },
+  {
+    "id": "au_premium_1",
+    "bank": "AU",
+    "segment": "premium"
+  },
+  {
+    "id": "au_co-branded_1",
+    "bank": "AU",
+    "segment": "co-branded"
+  },
+  {
+    "id": "au_points_1",
+    "bank": "AU",
+    "segment": "points"
+  },
+  {
+    "id": "au_ultra-premium_1",
+    "bank": "AU",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "au_fuel_1",
+    "bank": "AU",
+    "segment": "fuel"
+  },
+  {
+    "id": "au_business_1",
+    "bank": "AU",
+    "segment": "business"
+  },
+  {
+    "id": "idfc_entry_1",
+    "bank": "IDFC",
+    "segment": "entry"
+  },
+  {
+    "id": "idfc_cashback_1",
+    "bank": "IDFC",
+    "segment": "cashback"
+  },
+  {
+    "id": "idfc_online_1",
+    "bank": "IDFC",
+    "segment": "online"
+  },
+  {
+    "id": "idfc_travel_1",
+    "bank": "IDFC",
+    "segment": "travel"
+  },
+  {
+    "id": "idfc_premium_1",
+    "bank": "IDFC",
+    "segment": "premium"
+  },
+  {
+    "id": "idfc_co-branded_1",
+    "bank": "IDFC",
+    "segment": "co-branded"
+  },
+  {
+    "id": "idfc_points_1",
+    "bank": "IDFC",
+    "segment": "points"
+  },
+  {
+    "id": "idfc_ultra-premium_1",
+    "bank": "IDFC",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "idfc_fuel_1",
+    "bank": "IDFC",
+    "segment": "fuel"
+  },
+  {
+    "id": "idfc_business_1",
+    "bank": "IDFC",
+    "segment": "business"
+  },
+  {
+    "id": "standardchartered_entry_1",
+    "bank": "StandardChartered",
+    "segment": "entry"
+  },
+  {
+    "id": "standardchartered_cashback_1",
+    "bank": "StandardChartered",
+    "segment": "cashback"
+  },
+  {
+    "id": "standardchartered_online_1",
+    "bank": "StandardChartered",
+    "segment": "online"
+  },
+  {
+    "id": "standardchartered_travel_1",
+    "bank": "StandardChartered",
+    "segment": "travel"
+  },
+  {
+    "id": "standardchartered_premium_1",
+    "bank": "StandardChartered",
+    "segment": "premium"
+  },
+  {
+    "id": "standardchartered_co-branded_1",
+    "bank": "StandardChartered",
+    "segment": "co-branded"
+  },
+  {
+    "id": "standardchartered_points_1",
+    "bank": "StandardChartered",
+    "segment": "points"
+  },
+  {
+    "id": "standardchartered_ultra-premium_1",
+    "bank": "StandardChartered",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "standardchartered_fuel_1",
+    "bank": "StandardChartered",
+    "segment": "fuel"
+  },
+  {
+    "id": "standardchartered_business_1",
+    "bank": "StandardChartered",
+    "segment": "business"
+  },
+  {
+    "id": "bob_entry_1",
+    "bank": "BoB",
+    "segment": "entry"
+  },
+  {
+    "id": "bob_cashback_1",
+    "bank": "BoB",
+    "segment": "cashback"
+  },
+  {
+    "id": "bob_online_1",
+    "bank": "BoB",
+    "segment": "online"
+  },
+  {
+    "id": "bob_travel_1",
+    "bank": "BoB",
+    "segment": "travel"
+  },
+  {
+    "id": "bob_premium_1",
+    "bank": "BoB",
+    "segment": "premium"
+  },
+  {
+    "id": "bob_co-branded_1",
+    "bank": "BoB",
+    "segment": "co-branded"
+  },
+  {
+    "id": "bob_points_1",
+    "bank": "BoB",
+    "segment": "points"
+  },
+  {
+    "id": "bob_ultra-premium_1",
+    "bank": "BoB",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "bob_fuel_1",
+    "bank": "BoB",
+    "segment": "fuel"
+  },
+  {
+    "id": "bob_business_1",
+    "bank": "BoB",
+    "segment": "business"
+  },
+  {
+    "id": "pnb_entry_1",
+    "bank": "PNB",
+    "segment": "entry"
+  },
+  {
+    "id": "pnb_cashback_1",
+    "bank": "PNB",
+    "segment": "cashback"
+  },
+  {
+    "id": "pnb_online_1",
+    "bank": "PNB",
+    "segment": "online"
+  },
+  {
+    "id": "pnb_travel_1",
+    "bank": "PNB",
+    "segment": "travel"
+  },
+  {
+    "id": "pnb_premium_1",
+    "bank": "PNB",
+    "segment": "premium"
+  },
+  {
+    "id": "pnb_co-branded_1",
+    "bank": "PNB",
+    "segment": "co-branded"
+  },
+  {
+    "id": "pnb_points_1",
+    "bank": "PNB",
+    "segment": "points"
+  },
+  {
+    "id": "pnb_ultra-premium_1",
+    "bank": "PNB",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "pnb_fuel_1",
+    "bank": "PNB",
+    "segment": "fuel"
+  },
+  {
+    "id": "pnb_business_1",
+    "bank": "PNB",
+    "segment": "business"
+  },
+  {
+    "id": "federal_entry_1",
+    "bank": "Federal",
+    "segment": "entry"
+  },
+  {
+    "id": "federal_cashback_1",
+    "bank": "Federal",
+    "segment": "cashback"
+  },
+  {
+    "id": "federal_online_1",
+    "bank": "Federal",
+    "segment": "online"
+  },
+  {
+    "id": "federal_travel_1",
+    "bank": "Federal",
+    "segment": "travel"
+  },
+  {
+    "id": "federal_premium_1",
+    "bank": "Federal",
+    "segment": "premium"
+  },
+  {
+    "id": "federal_co-branded_1",
+    "bank": "Federal",
+    "segment": "co-branded"
+  },
+  {
+    "id": "federal_points_1",
+    "bank": "Federal",
+    "segment": "points"
+  },
+  {
+    "id": "federal_ultra-premium_1",
+    "bank": "Federal",
+    "segment": "ultra-premium"
+  },
+  {
+    "id": "federal_fuel_1",
+    "bank": "Federal",
+    "segment": "fuel"
+  },
+  {
+    "id": "federal_business_1",
+    "bank": "Federal",
+    "segment": "business"
+  },
+  {
+    "id": "citi_entry_1",
+    "bank": "Citi",
+    "segment": "entry"
+  },
+  {
+    "id": "citi_cashback_1",
+    "bank": "Citi",
+    "segment": "cashback"
+  },
+  {
+    "id": "citi_online_1",
+    "bank": "Citi",
+    "segment": "online"
+  },
+  {
+    "id": "citi_travel_1",
+    "bank": "Citi",
+    "segment": "travel"
+  },
+  {
+    "id": "citi_premium_1",
+    "bank": "Citi",
+    "segment": "premium"
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "card_id": "sbi_cashback",
+  "card_name": "SBI Cashback Credit Card",
+  "issuer": "SBI Card",
+  "network": ["Visa"],
+  "tier": "mid",
+  "reward_type": "cashback",
+  "fees": {
+    "joining_fee": 999,
+    "annual_fee": 999
+  },
+  "earn_rules": [
+    {
+      "category": "online_shopping",
+      "reward_rate": 0.05,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 5000,
+        "period": "monthly"
+      },
+      "cap_amount": 5000,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
+    },
+    {
+      "category": "dining",
+      "reward_rate": 0.01,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 300,
+        "period": "monthly"
+      },
+      "cap_amount": 300,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.005
+    },
+    {
+      "category": "travel",
+      "reward_rate": 0.01,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 300,
+        "period": "monthly"
+      },
+      "cap_amount": 300,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.005
+    },
+    {
+      "category": "fuel",
+      "reward_rate": 0.01,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 200,
+        "period": "monthly"
+      },
+      "cap_amount": 200,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.0
+    },
+    {
+      "category": "utilities",
+      "reward_rate": 0.01,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 200,
+        "period": "monthly"
+      },
+      "cap_amount": 200,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.005
+    },
+    {
+      "category": "entertainment",
+      "reward_rate": 0.01,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 200,
+        "period": "monthly"
+      },
+      "cap_amount": 200,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.005
+    },
+    {
+      "category": "others",
+      "reward_rate": 0.01,
+      "reward_unit": "cashback"
+    }
+  ],
+  "constraints": {
+    "excluded_categories": ["wallet_load", "government"]
+  },
+  "meta": {
+    "last_verified": "2026-03-27",
+    "source": "manual_curated"
+  }
+}

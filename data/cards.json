@@ -1,0 +1,37 @@
+[
+  {
+    "name": "HDFC Millennia",
+    "network": "visa",
+    "annual_fee": 1000,
+    "rewards": {
+      "online_shopping": 0.05,
+      "dining": 0.02,
+      "travel": 0.02,
+      "utilities": 0.01
+    },
+    "benefits": [
+      "5% cashback online",
+      "1% offline cashback"
+    ]
+  },
+  {
+    "name": "SBI Cashback",
+    "annual_fee": 999,
+    "rewards": {
+      "online_shopping": 0.05,
+      "dining": 0.03,
+      "travel": 0.02,
+      "utilities": 0.02
+    }
+  },
+  {
+    "name": "ICICI Amazon",
+    "annual_fee": 500,
+    "rewards": {
+      "online_shopping": 0.05,
+      "dining": 0.01,
+      "travel": 0.01,
+      "utilities": 0.01
+    }
+  }
+]

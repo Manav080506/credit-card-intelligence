@@ -1,57 +1,147 @@
-def generate_insights(wallet_result):
+def generate_insights(
+
+    wallet_analysis,
+
+    simulation_result=None
+
+):
 
     insights = []
 
-    coverage = wallet_result.get(
+    coverage = wallet_analysis.get(
+
         "coverage_analysis",
+
         {}
+
     )
 
-    missing = coverage.get(
-        "missing_categories",
-        []
-    )
+    score = wallet_analysis.get(
 
-    weak = coverage.get(
-        "weak_categories",
-        []
-    )
+        "wallet_score",
 
-    if missing:
-
-        insights.append(
-
-            f"Missing categories: {', '.join(missing)}"
-
-        )
-
-    if weak:
-
-        insights.append(
-
-            f"Weak reward coverage in: {', '.join(weak)}"
-
-        )
-
-    value = wallet_result.get(
-        "net_yearly_value",
         0
+
     )
 
-    if value < 5000:
+    net_value = wallet_analysis.get(
+
+        "net_yearly_value",
+
+        0
+
+    )
+
+    weak_categories = coverage.get(
+
+        "weak_categories",
+
+        []
+
+    )
+
+    missing_categories = coverage.get(
+
+        "missing_categories",
+
+        []
+
+    )
+
+
+    # overall score insight
+
+    if score >= 80:
 
         insights.append(
 
-            "Low yearly reward potential"
+            "Your wallet is highly optimized for your spending pattern."
 
         )
 
-    if value > 30000:
+    elif score >= 60:
 
         insights.append(
 
-            "Strong reward optimization achieved"
+            "Your wallet is moderately optimized but can be improved."
 
         )
+
+    else:
+
+        insights.append(
+
+            "Your wallet is under-optimized. You may be losing significant rewards."
+
+        )
+
+
+    # coverage insights
+
+    if weak_categories:
+
+        insights.append(
+
+            f"Weak reward coverage detected in: {', '.join(weak_categories)}."
+
+        )
+
+
+    if missing_categories:
+
+        insights.append(
+
+            f"No strong card detected for: {', '.join(missing_categories)}."
+
+        )
+
+
+    # value insight
+
+    insights.append(
+
+        f"Estimated yearly reward value: ₹{round(net_value)}."
+
+    )
+
+
+    # simulation insights
+
+    if simulation_result:
+
+        reward_change = simulation_result.get(
+
+            "reward_change",
+
+            0
+
+        )
+
+        score_change = simulation_result.get(
+
+            "wallet_score_change",
+
+            0
+
+        )
+
+
+        if reward_change > 0:
+
+            insights.append(
+
+                f"Optimizing spending could increase yearly rewards by ₹{round(reward_change)}."
+
+            )
+
+
+        if score_change > 5:
+
+            insights.append(
+
+                "Spending optimization significantly improves wallet efficiency."
+
+            )
+
 
     return insights

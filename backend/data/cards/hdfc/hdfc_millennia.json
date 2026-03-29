@@ -13,7 +13,38 @@
     {
       "category": "online_shopping",
       "reward_rate": 0.05,
-      "reward_unit": "cashback"
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 1000,
+        "period": "monthly"
+      },
+      "cap_amount": 1000,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
+    },
+    {
+      "category": "dining",
+      "reward_rate": 0.02,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 500,
+        "period": "monthly"
+      },
+      "cap_amount": 500,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
+    },
+    {
+      "category": "entertainment",
+      "reward_rate": 0.02,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 500,
+        "period": "monthly"
+      },
+      "cap_amount": 500,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
     },
     {
       "category": "others",
@@ -25,7 +56,7 @@
     "excluded_categories": ["wallet_load", "government"]
   },
   "meta": {
-    "last_verified": "2026-01-05",
-    "source": "hdfc_site"
+    "last_verified": "2026-03-27",
+    "source": "manual_curated"
   }
 }

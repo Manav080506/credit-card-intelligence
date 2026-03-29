@@ -13,14 +13,28 @@
   },
   "earn_rules": [
     {
+      "category": "dining",
+      "reward_rate": 3,
+      "reward_unit": "points_per_150",
+      "cap_amount": 2500,
+      "cap_period": "monthly"
+    },
+    {
+      "category": "utilities",
+      "reward_rate": 2,
+      "reward_unit": "points_per_150",
+      "cap_amount": 2000,
+      "cap_period": "monthly"
+    },
+    {
       "category": "others",
-      "reward_rate": 0.01,
-      "reward_unit": "points"
+      "reward_rate": 2,
+      "reward_unit": "points_per_150"
     }
   ],
   "constraints": {},
   "meta": {
-    "last_verified": "2026-03-24",
-    "source": "manual_entry"
+    "last_verified": "2026-03-27",
+    "source": "manual_curated"
   }
 }

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "sbi_cashback",
+    "name": "SBI Cashback Card",
+    "issuer": "SBI",
+    "annual_fee": 999,
+    "joining_fee": 999,
+    "reward_type": "cashback",
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.01,
+      "travel": 0.01,
+      "utilities": 0.01
+    },
+    "welcome_bonus": 500,
+    "reward_cap": 5000,
+    "rating": 4.8,
+    "best_for": ["online_shopping"],
+    "network": "Visa"
+  },
+  {
+    "id": "hdfc_millennia",
+    "name": "HDFC Millennia",
+    "issuer": "HDFC",
+    "annual_fee": 1000,
+    "reward_type": "cashback",
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.025,
+      "travel": 0.01,
+      "utilities": 0.01
+    },
+    "rating": 4.6,
+    "best_for": ["online_shopping", "dining"],
+    "network": "Visa"
+  },
+  {
+    "id": "icici_amazon",
+    "name": "ICICI Amazon Pay",
+    "issuer": "ICICI",
+    "annual_fee": 0,
+    "reward_type": "cashback",
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.02,
+      "travel": 0.01,
+      "utilities": 0.02
+    },
+    "rating": 4.7,
+    "best_for": ["amazon", "utilities"],
+    "network": "Visa"
+  },
+  {
+    "id": "axis_atlas",
+    "name": "Axis Atlas",
+    "issuer": "Axis",
+    "annual_fee": 5000,
+    "reward_type": "travel_points",
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.02,
+      "travel": 0.05,
+      "utilities": 0.01
+    },
+    "rating": 4.5,
+    "best_for": ["travel"],
+    "network": "Visa"
+  },
+  {
+    "id": "amex_mrcc",
+    "name": "Amex MRCC",
+    "issuer": "Amex",
+    "annual_fee": 4500,
+    "reward_type": "reward_points",
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.03,
+      "travel": 0.02,
+      "utilities": 0.01
+    },
+    "rating": 4.4,
+    "best_for": ["rewards"],
+    "network": "Amex"
+  },
+  {
+    "id": "axis_ace",
+    "name": "Axis Ace",
+    "issuer": "Axis",
+    "annual_fee": 499,
+    "reward_type": "cashback",
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.02,
+      "travel": 0.01,
+      "utilities": 0.05
+    },
+    "rating": 4.6,
+    "best_for": ["utilities"],
+    "network": "Mastercard"
+  }
+]

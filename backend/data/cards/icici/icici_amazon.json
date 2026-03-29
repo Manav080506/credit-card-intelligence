@@ -24,13 +24,50 @@
         "period": "monthly"
       },
 
+      "cap_amount": 1000,
+
+      "cap_period": "monthly",
+
       "post_cap_reward_rate": 0.01
     },
 
     {
-      "category": "groceries",
+      "category": "dining",
       "reward_rate": 0.02,
-      "reward_unit": "cashback"
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 500,
+        "period": "monthly"
+      },
+      "cap_amount": 500,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
+    },
+
+    {
+      "category": "travel",
+      "reward_rate": 0.02,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 500,
+        "period": "monthly"
+      },
+      "cap_amount": 500,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.01
+    },
+
+    {
+      "category": "entertainment",
+      "reward_rate": 0.01,
+      "reward_unit": "cashback",
+      "cap": {
+        "amount": 300,
+        "period": "monthly"
+      },
+      "cap_amount": 300,
+      "cap_period": "monthly",
+      "post_cap_reward_rate": 0.005
     },
 
     {
@@ -44,8 +81,8 @@
   "constraints": {},
 
   "meta": {
-    "last_verified": "2026-03-24",
-    "source": "manual_entry"
+    "last_verified": "2026-03-27",
+    "source": "manual_curated"
   }
 
 }

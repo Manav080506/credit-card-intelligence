@@ -1,0 +1,50 @@
+{
+  "missing_categories": [
+    "food_dining",
+    "international",
+    "wallet_load",
+    "government"
+  ],
+  "coverage": {
+    "online_shopping": {
+      "cards_supporting": 7,
+      "coverage_ratio": 0.6364
+    },
+    "food_dining": {
+      "cards_supporting": 0,
+      "coverage_ratio": 0.0
+    },
+    "travel": {
+      "cards_supporting": 4,
+      "coverage_ratio": 0.3636
+    },
+    "fuel": {
+      "cards_supporting": 3,
+      "coverage_ratio": 0.2727
+    },
+    "utilities": {
+      "cards_supporting": 5,
+      "coverage_ratio": 0.4545
+    },
+    "entertainment": {
+      "cards_supporting": 7,
+      "coverage_ratio": 0.6364
+    },
+    "international": {
+      "cards_supporting": 0,
+      "coverage_ratio": 0.0
+    },
+    "wallet_load": {
+      "cards_supporting": 0,
+      "coverage_ratio": 0.0
+    },
+    "government": {
+      "cards_supporting": 0,
+      "coverage_ratio": 0.0
+    },
+    "others": {
+      "cards_supporting": 11,
+      "coverage_ratio": 1.0
+    }
+  }
+}

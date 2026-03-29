@@ -1,0 +1,7 @@
+{
+  "category": "online_shopping",
+  "reward_type": "cashback",
+  "reward_rate": 5.0,
+  "cap_amount": 1000.0,
+  "cap_period": "monthly"
+}

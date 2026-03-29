@@ -1,0 +1,54 @@
+{
+  "card_id": "amex_mrcc",
+  "card_name": "American Express Membership Rewards Credit Card",
+  "issuer": "Amex",
+  "network": ["Amex"],
+  "tier": "mid",
+  "reward_type": "points",
+  "fees": {
+    "joining_fee": 0,
+    "annual_fee": 1500
+  },
+  "earn_rules": [
+    {
+      "category": "dining",
+      "reward_rate": 4,
+      "reward_unit": "points_per_150",
+      "cap_amount": 4000,
+      "cap_period": "monthly"
+    },
+    {
+      "category": "travel",
+      "reward_rate": 3,
+      "reward_unit": "points_per_150",
+      "cap_amount": 3000,
+      "cap_period": "monthly"
+    },
+    {
+      "category": "entertainment",
+      "reward_rate": 3,
+      "reward_unit": "points_per_150",
+      "cap_amount": 3000,
+      "cap_period": "monthly"
+    },
+    {
+      "category": "online_shopping",
+      "reward_rate": 2,
+      "reward_unit": "points_per_150",
+      "cap_amount": 3000,
+      "cap_period": "monthly"
+    },
+    {
+      "category": "others",
+      "reward_rate": 2,
+      "reward_unit": "points_per_150"
+    }
+  ],
+  "constraints": {
+    "excluded_categories": []
+  },
+  "meta": {
+    "last_verified": "2026-03-27",
+    "source": "manual_curated"
+  }
+}

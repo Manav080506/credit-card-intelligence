@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "errors": [],
+  "rule": {
+    "category": "online_shopping",
+    "reward_rate": 5.0,
+    "reward_unit": "cashback",
+    "cap_amount": 1000.0,
+    "cap_period": "monthly"
+  }
+}

@@ -51,5 +51,9 @@
       "label": "Others",
       "description": "Any transaction not fitting above categories"
     }
-  ]
+  ],
+  "merchant_mappings": {
+    "amazon": "online_shopping",
+    "swiggy": "dining"
+  }
 }

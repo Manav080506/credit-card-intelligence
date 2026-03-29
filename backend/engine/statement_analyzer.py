@@ -1,12 +1,14 @@
-import csv
-
 from backend.engine.transaction_optimizer import best_card_for_transaction
 
 from backend.engine.merchant_classifier import classify_merchant
 
+
 def analyze_statement(
+
     card_ids,
+
     transactions
+
 ):
 
     results = []
@@ -16,13 +18,31 @@ def analyze_statement(
 
     for txn in transactions:
 
+
+        # auto detect category if not provided
+
+        if "category" not in txn or not txn["category"]:
+
+            classification = classify_merchant(
+
+                txn["merchant"]
+
+            )
+
+            category = classification["category"]
+
+        else:
+
+            category = txn["category"]
+
+
         recommendation = best_card_for_transaction(
 
             card_ids=card_ids,
 
             amount=txn["amount"],
 
-            category=txn["category"]
+            category=category
 
         )
 
@@ -33,7 +53,7 @@ def analyze_statement(
 
             "amount": txn["amount"],
 
-            "category": txn["category"],
+            "category": category,
 
             "recommended_card": recommendation["recommended_card"],
 
@@ -49,7 +69,13 @@ def analyze_statement(
 
         "transactions_analyzed": len(results),
 
-        "total_possible_reward": round(total_possible_reward, 2),
+        "total_possible_reward": round(
+
+            total_possible_reward,
+
+            2
+
+        ),
 
         "recommendations": results
 

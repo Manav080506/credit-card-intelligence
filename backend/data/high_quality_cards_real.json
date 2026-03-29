@@ -1,0 +1,402 @@
+[
+  {
+    "id": "hdfc_infinia",
+    "bank": "HDFC",
+    "name": "HDFC Infinia Credit Card",
+    "segment": "ultra-premium",
+    "annual_fee": 0,
+    "monthly_reward": 2500,
+    "yearly_reward": 30000,
+    "efficiency_score": 0.94,
+    "lounge_access": true,
+    "forex_markup": 0,
+    "pros": ["Lifetime unlimited lounge access", "Zero annual fee", "Exceptional cashback on international"],
+    "cons": ["High income requirement", "Limited merchant network", "Complex reward rules"],
+    "categories": {
+      "online_shopping": 3.5,
+      "dining": 5,
+      "travel": 5,
+      "utilities": 1
+    }
+  },
+  {
+    "id": "axis_magnus",
+    "bank": "Axis",
+    "name": "Axis Magnus Credit Card",
+    "segment": "ultra-premium",
+    "annual_fee": 15000,
+    "monthly_reward": 1800,
+    "yearly_reward": 21600,
+    "efficiency_score": 0.87,
+    "lounge_access": true,
+    "forex_markup": 0,
+    "pros": ["Best-in-class dining benefits", "Priority banking", "Complimentary airport transfers"],
+    "cons": ["High annual fee", "Strict eligibility", "Limited categories"],
+    "categories": {
+      "online_shopping": 2,
+      "dining": 5,
+      "travel": 4.5,
+      "utilities": 0.5
+    }
+  },
+  {
+    "id": "axis_atlas",
+    "bank": "Axis",
+    "name": "Axis Atlas Credit Card",
+    "segment": "premium",
+    "annual_fee": 2500,
+    "monthly_reward": 1200,
+    "yearly_reward": 14400,
+    "efficiency_score": 0.82,
+    "lounge_access": true,
+    "forex_markup": 1.5,
+    "pros": ["Great for travel", "Good lounge network", "Reasonable annual fee"],
+    "cons": ["Forex markup on international", "Limited dining options", "Frequent fee increases"],
+    "categories": {
+      "online_shopping": 2,
+      "dining": 3,
+      "travel": 5,
+      "utilities": 1
+    }
+  },
+  {
+    "id": "sbi_elite",
+    "bank": "SBI",
+    "name": "SBI Elite Credit Card",
+    "segment": "premium",
+    "annual_fee": 3000,
+    "monthly_reward": 900,
+    "yearly_reward": 10800,
+    "efficiency_score": 0.76,
+    "lounge_access": true,
+    "forex_markup": 2,
+    "pros": ["Balanced rewards", "Good for travel", "Reliable customer service"],
+    "cons": ["High forex markup", "Moderate rewards", "Complex point system"],
+    "categories": {
+      "online_shopping": 1.5,
+      "dining": 2.5,
+      "travel": 4,
+      "utilities": 0.5
+    }
+  },
+  {
+    "id": "icici_emeralde",
+    "bank": "ICICI",
+    "name": "ICICI Emeralde Credit Card",
+    "segment": "premium",
+    "annual_fee": 6000,
+    "monthly_reward": 1100,
+    "yearly_reward": 13200,
+    "efficiency_score": 0.81,
+    "lounge_access": true,
+    "forex_markup": 1.5,
+    "pros": ["Strong dining rewards", "Good international coverage", "Premium lifestyle benefits"],
+    "cons": ["High annual fee", "Limited cashback categories", "Strict income requirement"],
+    "categories": {
+      "online_shopping": 2,
+      "dining": 4,
+      "travel": 4.5,
+      "utilities": 1
+    }
+  },
+  {
+    "id": "amex_platinum_travel",
+    "bank": "AMEX",
+    "name": "American Express Platinum Travel Card",
+    "segment": "ultra-premium",
+    "annual_fee": 20000,
+    "monthly_reward": 3000,
+    "yearly_reward": 36000,
+    "efficiency_score": 0.91,
+    "lounge_access": true,
+    "forex_markup": 0,
+    "pros": ["Exclusive airport terminal access", "Best international rewards", "Premium concierge service"],
+    "cons": ["Highest annual fee", "Limited merchant network", "Very strict eligibility"],
+    "categories": {
+      "online_shopping": 2.5,
+      "dining": 4,
+      "travel": 7,
+      "utilities": 0
+    }
+  },
+  {
+    "id": "tata_neu_infinity",
+    "bank": "HDFC/Tata",
+    "name": "Tata Neu Infinity Credit Card",
+    "segment": "ultra-premium",
+    "annual_fee": 0,
+    "monthly_reward": 1500,
+    "yearly_reward": 18000,
+    "efficiency_score": 0.88,
+    "lounge_access": true,
+    "forex_markup": 0,
+    "pros": ["Zero annual fee", "Exclusive Tata ecosystem benefits", "Strong neighborhood spending rewards"],
+    "cons": ["Limited to Tata partners", "Complex point redemption", "Newer card with uncertain benefits"],
+    "categories": {
+      "online_shopping": 3,
+      "dining": 2.5,
+      "travel": 3,
+      "utilities": 2
+    }
+  },
+  {
+    "id": "airtel_axis",
+    "bank": "Axis",
+    "name": "Airtel Axis Bank Credit Card",
+    "segment": "entry",
+    "annual_fee": 0,
+    "monthly_reward": 400,
+    "yearly_reward": 4800,
+    "efficiency_score": 0.65,
+    "lounge_access": false,
+    "forex_markup": 3.5,
+    "pros": ["Zero annual fee", "Good for postpaid users", "Easy approval"],
+    "cons": ["Low rewards", "High forex markup", "Limited lounge access"],
+    "categories": {
+      "online_shopping": 1,
+      "dining": 1,
+      "travel": 1,
+      "utilities": 3
+    }
+  },
+  {
+    "id": "swiggy_hdfc",
+    "bank": "HDFC",
+    "name": "Swiggy HDFC Bank Credit Card",
+    "segment": "co-branded",
+    "annual_fee": 0,
+    "monthly_reward": 600,
+    "yearly_reward": 7200,
+    "efficiency_score": 0.72,
+    "lounge_access": false,
+    "forex_markup": 2.5,
+    "pros": ["Perfect for food delivery users", "Zero annual fee", "High dining category rewards"],
+    "cons": ["Limited rewards outside Swiggy", "No lounge access", "Tied to single partner"],
+    "categories": {
+      "online_shopping": 1.5,
+      "dining": 4.5,
+      "travel": 0.5,
+      "utilities": 0.5
+    }
+  },
+  {
+    "id": "hsbc_live_plus",
+    "bank": "HSBC",
+    "name": "HSBC Live+ Credit Card",
+    "segment": "premium",
+    "annual_fee": 2000,
+    "monthly_reward": 1000,
+    "yearly_reward": 12000,
+    "efficiency_score": 0.8,
+    "lounge_access": true,
+    "forex_markup": 1,
+    "pros": ["Best forex rates", "Good international coverage", "Balanced rewards"],
+    "cons": ["Limited redemption options", "Moderate annual fee", "Less recognized locally"],
+    "categories": {
+      "online_shopping": 2,
+      "dining": 2.5,
+      "travel": 4.5,
+      "utilities": 0.5
+    }
+  },
+  {
+    "id": "idfc_first_wealth",
+    "bank": "IDFC",
+    "name": "IDFC FIRST Wealth Credit Card",
+    "segment": "ultra-premium",
+    "annual_fee": 10000,
+    "monthly_reward": 1600,
+    "yearly_reward": 19200,
+    "efficiency_score": 0.84,
+    "lounge_access": true,
+    "forex_markup": 1,
+    "pros": ["Good investment-linked benefits", "Strong travel rewards", "Reasonable annual fee"],
+    "cons": ["Lower market recognition", "Complex benefits structure", "Limited merchant network"],
+    "categories": {
+      "online_shopping": 2.5,
+      "dining": 3,
+      "travel": 5,
+      "utilities": 1
+    }
+  },
+  {
+    "id": "idfc_first_select",
+    "bank": "IDFC",
+    "name": "IDFC FIRST Select Credit Card",
+    "segment": "premium",
+    "annual_fee": 3000,
+    "monthly_reward": 900,
+    "yearly_reward": 10800,
+    "efficiency_score": 0.73,
+    "lounge_access": true,
+    "forex_markup": 2,
+    "pros": ["Good mid-tier option", "Lounge access", "Reasonable pricing"],
+    "cons": ["Lower rewards tier", "Limited category coverage", "Forex markup"],
+    "categories": {
+      "online_shopping": 1.5,
+      "dining": 2.5,
+      "travel": 3.5,
+      "utilities": 0.5
+    }
+  },
+  {
+    "id": "rbl_world_safari",
+    "bank": "RBL",
+    "name": "RBL Bank World Safari Credit Card",
+    "segment": "premium",
+    "annual_fee": 2500,
+    "monthly_reward": 1100,
+    "yearly_reward": 13200,
+    "efficiency_score": 0.79,
+    "lounge_access": true,
+    "forex_markup": 1.5,
+    "pros": ["Excellent for frequent travelers", "Good international coverage", "Competitive annual fee"],
+    "cons": ["Less recognized", "Limited local benefits", "Smaller bank"],
+    "categories": {
+      "online_shopping": 1.5,
+      "dining": 2,
+      "travel": 5,
+      "utilities": 0.5
+    }
+  },
+  {
+    "id": "indusind_pinnacle",
+    "bank": "IndusInd",
+    "name": "IndusInd Bank Pinnacle Credit Card",
+    "segment": "ultra-premium",
+    "annual_fee": 8500,
+    "monthly_reward": 1700,
+    "yearly_reward": 20400,
+    "efficiency_score": 0.85,
+    "lounge_access": true,
+    "forex_markup": 1,
+    "pros": ["Good premium benefits", "Strong travel rewards", "Good domestic network"],
+    "cons": ["Moderately high annual fee", "Emerging bank", "Limited international reach"],
+    "categories": {
+      "online_shopping": 2,
+      "dining": 3.5,
+      "travel": 5,
+      "utilities": 1
+    }
+  },
+  {
+    "id": "kotak_white_reserve",
+    "bank": "Kotak",
+    "name": "Kotak White Reserve Credit Card",
+    "segment": "ultra-premium",
+    "annual_fee": 12000,
+    "monthly_reward": 1800,
+    "yearly_reward": 21600,
+    "efficiency_score": 0.83,
+    "lounge_access": true,
+    "forex_markup": 0.5,
+    "pros": ["Premium lifestyle benefits", "Strong investment options", "Good domestic network"],
+    "cons": ["High annual fee", "Complex benefit structure", "Limited international coverage"],
+    "categories": {
+      "online_shopping": 2,
+      "dining": 4,
+      "travel": 4,
+      "utilities": 1
+    }
+  },
+  {
+    "id": "standard_chartered_ultimate",
+    "bank": "Standard Chartered",
+    "name": "Standard Chartered Ultimate Credit Card",
+    "segment": "ultra-premium",
+    "annual_fee": 15000,
+    "monthly_reward": 2400,
+    "yearly_reward": 28800,
+    "efficiency_score": 0.89,
+    "lounge_access": true,
+    "forex_markup": 0,
+    "pros": ["Best international recognition", "Excellent travel benefits", "Premium experience globally"],
+    "cons": ["Very high annual fee", "Limited local benefits", "Strict eligibility"],
+    "categories": {
+      "online_shopping": 1.5,
+      "dining": 3,
+      "travel": 6,
+      "utilities": 0
+    }
+  },
+  {
+    "id": "axis_vistara_infinite",
+    "bank": "Axis",
+    "name": "Axis Vistara Infinite Credit Card",
+    "segment": "ultra-premium",
+    "annual_fee": 10000,
+    "monthly_reward": 1400,
+    "yearly_reward": 16800,
+    "efficiency_score": 0.81,
+    "lounge_access": true,
+    "forex_markup": 1,
+    "pros": ["Perfect for frequent flyers", "Excellent airline benefits", "Good hospitality network"],
+    "cons": ["High annual fee", "Limited if not flying frequently", "Complex benefits"],
+    "categories": {
+      "online_shopping": 1,
+      "dining": 2,
+      "travel": 6,
+      "utilities": 0.5
+    }
+  },
+  {
+    "id": "icici_emirates",
+    "bank": "ICICI",
+    "name": "ICICI Bank Emirates Skywards Credit Card",
+    "segment": "premium",
+    "annual_fee": 4000,
+    "monthly_reward": 900,
+    "yearly_reward": 10800,
+    "efficiency_score": 0.77,
+    "lounge_access": true,
+    "forex_markup": 1.5,
+    "pros": ["Airline-focused benefits", "Miles accumulation", "Good for regular travelers"],
+    "cons": ["Limited to one airline", "Moderate rewards", "Forex markup"],
+    "categories": {
+      "online_shopping": 1,
+      "dining": 1.5,
+      "travel": 5,
+      "utilities": 0
+    }
+  },
+  {
+    "id": "hdfc_marriott",
+    "bank": "HDFC",
+    "name": "HDFC Marriott Rewards Credit Card",
+    "segment": "co-branded",
+    "annual_fee": 3000,
+    "monthly_reward": 800,
+    "yearly_reward": 9600,
+    "efficiency_score": 0.74,
+    "lounge_access": true,
+    "forex_markup": 2,
+    "pros": ["Excellent hotel rewards", "Free Marriott nights", "Good for frequent travelers"],
+    "cons": ["Limited if not staying at hotels", "Forex markup", "Moderate rewards"],
+    "categories": {
+      "online_shopping": 1,
+      "dining": 1.5,
+      "travel": 4,
+      "utilities": 0.5
+    }
+  },
+  {
+    "id": "irctc_sbi",
+    "bank": "SBI",
+    "name": "IRCTC SBI Bank Credit Card",
+    "segment": "co-branded",
+    "annual_fee": 500,
+    "monthly_reward": 300,
+    "yearly_reward": 3600,
+    "efficiency_score": 0.68,
+    "lounge_access": false,
+    "forex_markup": 3,
+    "pros": ["Extremely low annual fee", "Best for train travelers", "Easy redemption"],
+    "cons": ["Very low rewards overall", "Limited merchant acceptance", "No lounge access"],
+    "categories": {
+      "online_shopping": 0.5,
+      "dining": 0.5,
+      "travel": 3,
+      "utilities": 0.5
+    }
+  }
+]

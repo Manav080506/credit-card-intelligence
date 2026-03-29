@@ -23,13 +23,25 @@
     {
       "category": "travel",
       "reward_rate": 5,
-      "reward_unit": "points_per_150"
+      "reward_unit": "points_per_150",
+      "cap_amount": 5000,
+      "cap_period": "monthly"
     },
 
     {
       "category": "dining",
       "reward_rate": 4,
-      "reward_unit": "points_per_150"
+      "reward_unit": "points_per_150",
+      "cap_amount": 4000,
+      "cap_period": "monthly"
+    },
+
+    {
+      "category": "entertainment",
+      "reward_rate": 4,
+      "reward_unit": "points_per_150",
+      "cap_amount": 3000,
+      "cap_period": "monthly"
     },
 
     {
@@ -52,8 +64,8 @@
   "constraints": {},
 
   "meta": {
-    "last_verified": "2026-03-24",
-    "source": "manual_entry"
+    "last_verified": "2026-03-27",
+    "source": "manual_curated"
   }
 
 }

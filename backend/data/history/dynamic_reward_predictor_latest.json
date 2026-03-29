@@ -1,0 +1,325 @@
+{
+  "best_card_id": "hdfc_regalia_gold",
+  "best_reward": 1521.47,
+  "estimates": {
+    "hdfc_millennia": {
+      "total_estimated_reward": 577.76,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 61.1,
+          "explanation": "online_shopping reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 66.66,
+          "explanation": "dining reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 300.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 150.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "hdfc_millennia_credit_card": {
+      "total_estimated_reward": 1477.76,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 61.1,
+          "explanation": "online_shopping reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 66.66,
+          "explanation": "dining reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 900.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 450.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "hdfc_moneyback": {
+      "total_estimated_reward": 588.88,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 30.55,
+          "explanation": "online_shopping reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 33.33,
+          "explanation": "others reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 300.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 225.0,
+          "explanation": "utilities reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "hdfc_regalia_gold": {
+      "total_estimated_reward": 1521.47,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 32.59,
+          "explanation": "others reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 88.88,
+          "explanation": "dining reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 1000.0,
+          "explanation": "travel reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 400.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "icici_amazon": {
+      "total_estimated_reward": 827.76,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 61.1,
+          "explanation": "online_shopping reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 66.66,
+          "explanation": "dining reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 550.0,
+          "explanation": "travel reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 150.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "icici_coral": {
+      "total_estimated_reward": 682.95,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 16.29,
+          "explanation": "others reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 66.66,
+          "explanation": "dining reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 400.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 200.0,
+          "explanation": "utilities reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "kotak_league_platinum": {
+      "total_estimated_reward": 708.04,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 12.22,
+          "explanation": "others reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 133.32,
+          "explanation": "dining reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 300.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 262.5,
+          "explanation": "utilities reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "axis_ace": {
+      "total_estimated_reward": 995.54,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 12.22,
+          "explanation": "others reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 133.32,
+          "explanation": "dining reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 300.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 550.0,
+          "explanation": "utilities reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "axis_flip": {
+      "total_estimated_reward": 544.43,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 61.1,
+          "explanation": "online_shopping reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 33.33,
+          "explanation": "others reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 300.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 150.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "sbi_cashback": {
+      "total_estimated_reward": 544.43,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 61.1,
+          "explanation": "online_shopping reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 33.33,
+          "explanation": "dining reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 300.0,
+          "explanation": "travel reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 150.0,
+          "explanation": "utilities reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    },
+    "amex_mrcc": {
+      "total_estimated_reward": 905.17,
+      "category_breakdown": {
+        "online_shopping": {
+          "estimated_reward": 16.29,
+          "explanation": "online_shopping reward applied",
+          "input_amount": 1222.0,
+          "normalized_amount": 1222.0
+        },
+        "dining": {
+          "estimated_reward": 88.88,
+          "explanation": "dining reward applied",
+          "input_amount": 3333.0,
+          "normalized_amount": 3333.0
+        },
+        "travel": {
+          "estimated_reward": 600.0,
+          "explanation": "travel reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 30000.0
+        },
+        "utilities": {
+          "estimated_reward": 200.0,
+          "explanation": "others reward applied",
+          "input_amount": 50000.0,
+          "normalized_amount": 15000.0
+        }
+      }
+    }
+  }
+}
