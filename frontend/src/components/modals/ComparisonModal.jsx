@@ -1,8 +1,17 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, formatMoney = (v) => v }) {
   const [selectedIndex, setSelectedIndex] = useState(0)
+
+  useEffect(() => {
+    if (!isOpen) return undefined
+    const originalOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = originalOverflow
+    }
+  }, [isOpen])
 
   if (!isOpen || !cards.length) return null
 
@@ -39,11 +48,25 @@ function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, for
 
   return (
     <AnimatePresence>
-      <motion.div variants={overlay} initial="initial" animate="enter" exit="exit" className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm" onClick={onClose} />
-
-      <motion.div variants={modal} initial="initial" animate="enter" exit="exit" className="fixed inset-4 md:inset-auto md:left-1/2 md:top-1/2 z-50 md:w-[90vw] md:max-w-5xl md:-translate-x-1/2 md:-translate-y-1/2 rounded-2xl border border-indigo-500/30 bg-gradient-to-br from-slate-900/95 via-slate-900/90 to-slate-950/95 backdrop-blur-xl shadow-2xl overflow-hidden">
+      <motion.div
+        variants={overlay}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
+        onClick={onClose}
+      >
+      <motion.div
+        variants={modal}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        className="w-[1100px] max-h-[90vh] max-w-[95vw] overflow-y-auto rounded-2xl border border-white/10 bg-[#0b1120] p-6 shadow-2xl"
+        style={{ paddingBottom: '40px' }}
+        onClick={(event) => event.stopPropagation()}
+      >
         {/* Header */}
-        <div className="relative border-b border-slate-700/50 bg-gradient-to-r from-slate-900/40 to-slate-950/40 px-6 py-4 md:px-8 md:py-6">
+        <div className="relative border-b border-slate-700/50 bg-gradient-to-r from-slate-900/40 to-slate-950/40 px-2 py-3 md:px-4 md:py-4">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-lg md:text-2xl font-bold text-slate-50">Card Comparison</h2>
@@ -60,8 +83,7 @@ function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, for
         </div>
 
         {/* Content */}
-        <div className="max-h-[85vh] overflow-y-auto">
-          <div className="p-6 md:p-8">
+          <div className="pt-6 md:pt-8">
             {/* Cards Grid Header */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               {displayCards.map((card, idx) => (
@@ -173,10 +195,9 @@ function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, for
               ))}
             </div>
           </div>
-        </div>
 
         {/* Footer */}
-        <div className="border-t border-slate-700/50 bg-gradient-to-r from-slate-900/40 to-slate-950/40 px-6 py-4 md:px-8 md:py-6 flex gap-3 justify-end">
+        <div className="mt-6 flex justify-end gap-3 border-t border-slate-700/50 bg-gradient-to-r from-slate-900/40 to-slate-950/40 px-2 py-4 md:px-4 md:py-5">
           <button
             onClick={onClose}
             className="px-4 py-2.5 rounded-lg border border-slate-600/50 bg-slate-800/50 hover:bg-slate-700/50 text-slate-200 text-sm font-medium transition-colors"
@@ -187,6 +208,7 @@ function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, for
             Apply Now
           </button>
         </div>
+      </motion.div>
       </motion.div>
     </AnimatePresence>
   )
