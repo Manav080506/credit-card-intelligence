@@ -1,0 +1,118 @@
+[
+  {
+    "card_name": "Axis Ace",
+    "bank": "Axis Bank",
+    "network": "Visa",
+    "annual_fee": 499,
+    "joining_fee": 499,
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.02,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.05,
+      "fuel": 0.01
+    },
+    "caps": {
+      "utilities": 500,
+      "online_shopping": 1000
+    },
+    "milestone_bonus": {
+      "threshold": 200000,
+      "bonus": 1500
+    },
+    "lounge_access": false
+  },
+  {
+    "card_name": "SBI Cashback",
+    "bank": "SBI",
+    "network": "Visa",
+    "annual_fee": 999,
+    "joining_fee": 999,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "fuel": 0.01
+    },
+    "caps": {
+      "online_shopping": 5000
+    },
+    "milestone_bonus": {
+      "threshold": 250000,
+      "bonus": 2000
+    },
+    "lounge_access": false
+  },
+  {
+    "card_name": "HDFC Regalia Gold",
+    "bank": "HDFC Bank",
+    "network": "Visa",
+    "annual_fee": 2500,
+    "joining_fee": 2500,
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.02,
+      "travel": 0.04,
+      "groceries": 0.015,
+      "utilities": 0.01,
+      "fuel": 0.01
+    },
+    "caps": {
+      "travel": 3000
+    },
+    "milestone_bonus": {
+      "threshold": 300000,
+      "bonus": 3000
+    },
+    "lounge_access": true
+  },
+  {
+    "card_name": "IDFC Power+",
+    "bank": "IDFC First Bank",
+    "network": "Mastercard",
+    "annual_fee": 0,
+    "joining_fee": 0,
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.02,
+      "travel": 0.01,
+      "groceries": 0.02,
+      "utilities": 0.03,
+      "fuel": 0.04
+    },
+    "caps": {
+      "fuel": 2000
+    },
+    "milestone_bonus": {
+      "threshold": 180000,
+      "bonus": 1200
+    },
+    "lounge_access": false
+  },
+  {
+    "card_name": "Amex Platinum Travel",
+    "bank": "American Express",
+    "network": "Amex",
+    "annual_fee": 5000,
+    "joining_fee": 5000,
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.02,
+      "travel": 0.05,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "fuel": 0.01
+    },
+    "caps": {
+      "travel": 5000
+    },
+    "milestone_bonus": {
+      "threshold": 400000,
+      "bonus": 8000
+    },
+    "lounge_access": true
+  }
+]

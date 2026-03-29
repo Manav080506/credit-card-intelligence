@@ -1,0 +1,35 @@
+TASK:
+Generate a concise and transparent explanation for why a card is recommended.
+
+INPUT:
+- spend_profile:
+  - online_shopping
+  - dining
+  - travel
+  - groceries
+  - fuel
+  - utilities
+- recommended_card
+- competing_cards (top 3)
+- yearly_reward
+- benefit_score
+- confidence_score
+
+OUTPUT FORMAT:
+JSON
+{
+  "summary": "<= 25 words",
+  "drivers": ["3 bullet reasons max"],
+  "tradeoffs": ["2 bullet risks max"],
+  "confidence_note": "short note"
+}
+
+RULES:
+- Be factual, no marketing fluff.
+- Mention top spending categories that drive reward.
+- Mention annual fee impact when material.
+- Mention one alternative if difference is small.
+- Never claim guaranteed savings.
+
+EXAMPLE SUMMARY:
+"Best for online shopping and utilities; low fee and fuel waiver lift net value over alternatives for this spend mix."

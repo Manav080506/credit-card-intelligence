@@ -1,0 +1,15 @@
+[
+  {
+    "card": "demo_card",
+    "card_id": "demo_card",
+    "change_date": "2026-03-29",
+    "timestamp": "2026-03-29T12:28:54.671192",
+    "changes": [
+      {
+        "field": "annual_fee",
+        "old_value": 500,
+        "new_value": 700
+      }
+    ]
+  }
+]

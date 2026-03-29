@@ -1,0 +1,117 @@
+openapi: 3.0.3
+info:
+  title: Credit Card Intelligence Public API
+  version: 1.0.0
+servers:
+  - url: https://api.credit-intelligence.example.com
+paths:
+  /v1/optimize:
+    post:
+      summary: Get top 3 optimized card recommendations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SpendProfile'
+      responses:
+        '200':
+          description: Optimization result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OptimizationResponse'
+  /v1/compare:
+    post:
+      summary: Compare a set of cards for a spend profile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [cards, monthly_spend]
+              properties:
+                cards:
+                  type: array
+                  items:
+                    type: object
+                monthly_spend:
+                  $ref: '#/components/schemas/SpendProfile'
+      responses:
+        '200':
+          description: Top compared cards
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComparedCard'
+  /v1/predict:
+    post:
+      summary: Predict best card via ensemble model with rule fallback
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [spend, card_dataset]
+              properties:
+                spend:
+                  $ref: '#/components/schemas/SpendProfile'
+                card_dataset:
+                  type: array
+                  items:
+                    type: object
+      responses:
+        '200':
+          description: Prediction output
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PredictionResponse'
+components:
+  schemas:
+    SpendProfile:
+      type: object
+      properties:
+        online_shopping: { type: number, default: 0 }
+        dining: { type: number, default: 0 }
+        travel: { type: number, default: 0 }
+        groceries: { type: number, default: 0 }
+        fuel: { type: number, default: 0 }
+        utilities: { type: number, default: 0 }
+        general: { type: number, default: 0 }
+    ComparedCard:
+      type: object
+      properties:
+        card_id: { type: string }
+        card_name: { type: string }
+        yearly_reward: { type: number }
+        monthly_reward: { type: number }
+        benefit_score: { type: number }
+        confidence_score: { type: number }
+        ranking_score: { type: number }
+        reason: { type: string }
+    OptimizationResponse:
+      type: object
+      properties:
+        best_card: { type: string }
+        expected_monthly_reward: { type: number }
+        expected_yearly_reward: { type: number }
+        confidence_score: { type: number }
+        top_cards:
+          type: array
+          items:
+            $ref: '#/components/schemas/ComparedCard'
+    PredictionResponse:
+      type: object
+      properties:
+        best_card:
+          type: object
+          properties:
+            card_id: { type: string }
+            card_name: { type: string }
+        predicted_reward: { type: number }
+        confidence: { type: number }

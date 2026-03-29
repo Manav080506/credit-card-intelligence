@@ -1,0 +1,28 @@
+{
+  "card_id": "axis_ace",
+  "card_name": "Axis Ace",
+  "bank": "Axis",
+  "annual_fee": 499,
+  "reward_type": "cashback",
+  "reward_rates": {
+    "online_shopping": 0.02,
+    "dining": 0.04,
+    "travel": 0.01,
+    "groceries": 0.01,
+    "fuel": 0.0,
+    "utilities": 0.05,
+    "general": 0.01
+  },
+  "milestone_bonus": [
+    {
+      "spend_threshold": 200000,
+      "bonus_value": 1000
+    }
+  ],
+  "benefits": {
+    "lounge_access": 4,
+    "fuel_surcharge_waiver": true,
+    "forex_markup": 3.5
+  },
+  "confidence": 0.92
+}

@@ -1,0 +1,1058 @@
+[
+  {
+    "card_id": "hdfc_millennia",
+    "card_name": "HDFC Millennia",
+    "bank": "HDFC",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 500,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.02,
+      "travel": 0.03,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": true
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 300000,
+        "reward_value": 5000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 5000
+    },
+    "eligibility": {
+      "min_annual_income": 500000,
+      "min_credit_score": 650
+    },
+    "confidence": 0.87,
+    "data_source": ["web", "manual"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.hdfcbank.com/millennia",
+    "notes": "Best for online shopping with 5% rewards"
+  },
+  {
+    "card_id": "hdfc_regalia_gold",
+    "card_name": "HDFC Regalia Gold",
+    "bank": "HDFC",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 2500,
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.015,
+      "travel": 0.03,
+      "fuel": 0.01,
+      "groceries": 0.0,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 4,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": true,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 2,
+      "complimentary_dining": 0,
+      "golf_privileges": true
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 500000,
+        "reward_value": 10000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 10000
+    },
+    "eligibility": {
+      "min_annual_income": 1500000,
+      "min_credit_score": 700
+    },
+    "confidence": 0.88,
+    "data_source": ["web", "pdf"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.hdfcbank.com/regalia-gold",
+    "notes": "Premium card with lounge access and travel benefits"
+  },
+  {
+    "card_id": "axis_ace",
+    "card_name": "Axis Ace",
+    "bank": "Axis",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 500,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.02,
+      "travel": 0.02,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.05,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 200000,
+        "reward_value": 2000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": true,
+      "welcome_bonus": 3000
+    },
+    "eligibility": {
+      "min_annual_income": 400000,
+      "min_credit_score": 600
+    },
+    "confidence": 0.86,
+    "data_source": ["web", "manual"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.axisbank.com/ace",
+    "notes": "Great for utilities and online shopping with no fee first year"
+  },
+  {
+    "card_id": "axis_flipkart",
+    "card_name": "Axis Flipkart",
+    "bank": "Axis",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 499,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.0,
+      "travel": 0.0,
+      "fuel": 0.0,
+      "groceries": 0.0,
+      "utilities": 0.0,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 100000,
+        "reward_value": 1500
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 2500
+    },
+    "eligibility": {
+      "min_annual_income": 300000,
+      "min_credit_score": 600
+    },
+    "confidence": 0.85,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.axisbank.com/flipkart",
+    "notes": "Flipkart co-branded, 5x SuperCoins multiplier"
+  },
+  {
+    "card_id": "sbi_cashback",
+    "card_name": "SBI Cashback",
+    "bank": "SBI",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 0,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.02,
+      "travel": 0.01,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": false,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 250000,
+        "reward_value": 3000
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 2000
+    },
+    "eligibility": {
+      "min_annual_income": 300000,
+      "min_credit_score": 600
+    },
+    "confidence": 0.84,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.sbi.co.in/cashback",
+    "notes": "Free card with decent cashback rewards"
+  },
+  {
+    "card_id": "sbi_simplyclick",
+    "card_name": "SBI SimplyClick",
+    "bank": "SBI",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 499,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.0,
+      "travel": 0.0,
+      "fuel": 0.0,
+      "groceries": 0.0,
+      "utilities": 0.0,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 300000,
+        "reward_value": 4000
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": true,
+      "renewal_bonus": true,
+      "welcome_bonus": 3000
+    },
+    "eligibility": {
+      "min_annual_income": 300000,
+      "min_credit_score": 600
+    },
+    "confidence": 0.85,
+    "data_source": ["web", "manual"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.sbi.co.in/simplyclick",
+    "notes": "Waived on renewal if annual spend > 100k"
+  },
+  {
+    "card_id": "icici_amazon_pay",
+    "card_name": "ICICI Amazon Pay",
+    "bank": "ICICI",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 0,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.01,
+      "travel": 0.01,
+      "fuel": 0.02,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": true,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 150000,
+        "reward_value": 2000
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 1500
+    },
+    "eligibility": {
+      "min_annual_income": 300000,
+      "min_credit_score": 600
+    },
+    "confidence": 0.86,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.icicibank.com/amazon-pay",
+    "notes": "Amazon Pay co-branded, cashback on Amazon purchases"
+  },
+  {
+    "card_id": "icici_coral",
+    "card_name": "ICICI Coral",
+    "bank": "ICICI",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 4000,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.02,
+      "travel": 0.03,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 6,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": true,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 400000,
+        "reward_value": 8000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 8000
+    },
+    "eligibility": {
+      "min_annual_income": 1200000,
+      "min_credit_score": 700
+    },
+    "confidence": 0.87,
+    "data_source": ["web", "pdf"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.icicibank.com/coral",
+    "notes": "Premium card with 6 lounge accesses and concierge"
+  },
+  {
+    "card_id": "amex_mrcc",
+    "card_name": "American Express MRCC",
+    "bank": "American Express",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 5500,
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.03,
+      "travel": 0.04,
+      "fuel": 0.01,
+      "groceries": 0.0,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 10,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": true,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 4,
+      "golf_privileges": true
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 500000,
+        "reward_value": 15000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 20000
+    },
+    "eligibility": {
+      "min_annual_income": 2000000,
+      "min_credit_score": 750
+    },
+    "confidence": 0.89,
+    "data_source": ["web", "pdf"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.americanexpress.co.in/mrcc",
+    "notes": "Ultra-premium with 10 lounge accesses and highest rewards on travel"
+  },
+  {
+    "card_id": "idfc_power_plus",
+    "card_name": "IDFC Power Plus",
+    "bank": "IDFC",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 1000,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.02,
+      "travel": 0.02,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": true,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 300000,
+        "reward_value": 5000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": true,
+      "welcome_bonus": 4000
+    },
+    "eligibility": {
+      "min_annual_income": 500000,
+      "min_credit_score": 650
+    },
+    "confidence": 0.83,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.idfcbank.com/power-plus",
+    "notes": "Good all-rounder with fuel surcharge waiver"
+  },
+  {
+    "card_id": "hsbc_premier",
+    "card_name": "HSBC Premier",
+    "bank": "HSBC",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 2500,
+    "reward_rates": {
+      "online_shopping": 0.03,
+      "dining": 0.02,
+      "travel": 0.04,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.02,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 4,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": true,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 2,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 350000,
+        "reward_value": 6000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 8000
+    },
+    "eligibility": {
+      "min_annual_income": 1000000,
+      "min_credit_score": 700
+    },
+    "confidence": 0.84,
+    "data_source": ["web", "manual"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.hsbc.co.in/premier",
+    "notes": "Premium lifestyle card with high travel rewards"
+  },
+  {
+    "card_id": "kotak_royale",
+    "card_name": "Kotak Royale",
+    "bank": "Kotak",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 3000,
+    "reward_rates": {
+      "online_shopping": 0.04,
+      "dining": 0.02,
+      "travel": 0.03,
+      "fuel": 0.02,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 4,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": true,
+      "airport_transfers": 2,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 350000,
+        "reward_value": 7000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 7000
+    },
+    "eligibility": {
+      "min_annual_income": 900000,
+      "min_credit_score": 680
+    },
+    "confidence": 0.85,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.kotak.com/royale",
+    "notes": "Balanced premium card with fuel surcharge waiver"
+  },
+  {
+    "card_id": "yes_premium",
+    "card_name": "Yes Premium Plus",
+    "bank": "Yes Bank",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 2000,
+    "reward_rates": {
+      "online_shopping": 0.03,
+      "dining": 0.02,
+      "travel": 0.02,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 4,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 250000,
+        "reward_value": 3000
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": true,
+      "renewal_bonus": true,
+      "welcome_bonus": 5000
+    },
+    "eligibility": {
+      "min_annual_income": 800000,
+      "min_credit_score": 680
+    },
+    "confidence": 0.82,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.yesbank.in/premium",
+    "notes": "Budget-friendly premium with 4 lounge accesses"
+  },
+  {
+    "card_id": "scb_visa_infinite",
+    "card_name": "Standard Chartered Visa Infinite",
+    "bank": "Standard Chartered",
+    "card_type": "credit",
+    "segment": "ultra_premium",
+    "annual_fee": 6000,
+    "reward_rates": {
+      "online_shopping": 0.03,
+      "dining": 0.02,
+      "travel": 0.04,
+      "fuel": 0.02,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 12,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": true,
+      "fuel_surcharge_waiver": true,
+      "airport_transfers": 4,
+      "complimentary_dining": 4,
+      "golf_privileges": true
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 600000,
+        "reward_value": 18000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 25000
+    },
+    "eligibility": {
+      "min_annual_income": 2500000,
+      "min_credit_score": 750
+    },
+    "confidence": 0.86,
+    "data_source": ["web", "pdf"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.standardchartered.co.in/visa-infinite",
+    "notes": "Ultra-premium with 12 lounge accesses and max benefits"
+  },
+  {
+    "card_id": "rbl_superfast",
+    "card_name": "RBL Superfast Credit Card",
+    "bank": "RBL",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 0,
+    "reward_rates": {
+      "online_shopping": 0.04,
+      "dining": 0.02,
+      "travel": 0.02,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 200000,
+        "reward_value": 2500
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 2000
+    },
+    "eligibility": {
+      "min_annual_income": 300000,
+      "min_credit_score": 600
+    },
+    "confidence": 0.80,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.rblbank.com/superfast",
+    "notes": "Lifetime free with decent cashback rates"
+  },
+  {
+    "card_id": "bob_premium",
+    "card_name": "Bank of Baroda Premium",
+    "bank": "Bank of Baroda",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 1500,
+    "reward_rates": {
+      "online_shopping": 0.03,
+      "dining": 0.02,
+      "travel": 0.02,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 2,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 300000,
+        "reward_value": 4000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 4000
+    },
+    "eligibility": {
+      "min_annual_income": 700000,
+      "min_credit_score": 650
+    },
+    "confidence": 0.79,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.bankofbaroda.in/premium",
+    "notes": "Entry-level premium card from public sector bank"
+  },
+  {
+    "card_id": "indusind_eazydiner",
+    "card_name": "IndusInd Eazydiner Signature",
+    "bank": "IndusInd",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 1200,
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.04,
+      "travel": 0.02,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 2,
+      "travel_insurance": false,
+      "purchase_protection": false,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 8,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 200000,
+        "reward_value": 2000
+      }
+    },
+    "card_features": {
+      "cashback": false,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 3000
+    },
+    "eligibility": {
+      "min_annual_income": 600000,
+      "min_credit_score": 650
+    },
+    "confidence": 0.81,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.indusindbank.com/eazydiner",
+    "notes": "Dining focused with 8 complimentary dinners annually"
+  },
+  {
+    "card_id": "au_platinum",
+    "card_name": "AU Bank Platinum",
+    "bank": "AU Bank",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 1800,
+    "reward_rates": {
+      "online_shopping": 0.03,
+      "dining": 0.02,
+      "travel": 0.02,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 2,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 250000,
+        "reward_value": 3000
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": true,
+      "renewal_bonus": true,
+      "welcome_bonus": 3500
+    },
+    "eligibility": {
+      "min_annual_income": 700000,
+      "min_credit_score": 650
+    },
+    "confidence": 0.78,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.aubank.in/platinum",
+    "notes": "AU Bank's premium offering with decent benefits"
+  },
+  {
+    "card_id": "federal_prime",
+    "card_name": "Federal Bank Prime",
+    "bank": "Federal Bank",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 1500,
+    "reward_rates": {
+      "online_shopping": 0.03,
+      "dining": 0.02,
+      "travel": 0.02,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 2,
+      "travel_insurance": true,
+      "purchase_protection": true,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 200000,
+        "reward_value": 2500
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 3000
+    },
+    "eligibility": {
+      "min_annual_income": 700000,
+      "min_credit_score": 650
+    },
+    "confidence": 0.77,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.federalbank.in/prime",
+    "notes": "Federal Bank's mid-tier premium card"
+  },
+  {
+    "card_id": "slice_pay",
+    "card_name": "Slice Super",
+    "bank": "Slice",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 0,
+    "reward_rates": {
+      "online_shopping": 0.03,
+      "dining": 0.01,
+      "travel": 0.01,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": false,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 100000,
+        "reward_value": 500
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": false,
+      "renewal_bonus": false,
+      "welcome_bonus": 0
+    },
+    "eligibility": {
+      "min_annual_income": 200000,
+      "min_credit_score": 550
+    },
+    "confidence": 0.75,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.sliceit.com/super",
+    "notes": "Fintech card for younger demographics, no processing fee"
+  },
+  {
+    "card_id": "lazypay_rupay",
+    "card_name": "LazyPay RuPay Credit",
+    "bank": "LazyPay",
+    "card_type": "credit",
+    "segment": "standard",
+    "annual_fee": 0,
+    "reward_rates": {
+      "online_shopping": 0.02,
+      "dining": 0.01,
+      "travel": 0.01,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 0,
+      "travel_insurance": false,
+      "purchase_protection": false,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 50000,
+        "reward_value": 250
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": false,
+      "renewal_bonus": false,
+      "welcome_bonus": 0
+    },
+    "eligibility": {
+      "min_annual_income": 150000,
+      "min_credit_score": 500
+    },
+    "confidence": 0.73,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.lazypay.in/rupay",
+    "notes": "Neo-bank RuPay card with minimal eligibility"
+  },
+  {
+    "card_id": "cred_rupay",
+    "card_name": "CRED RuPay Signature",
+    "bank": "CRED",
+    "card_type": "credit",
+    "segment": "premium",
+    "annual_fee": 0,
+    "reward_rates": {
+      "online_shopping": 0.04,
+      "dining": 0.02,
+      "travel": 0.02,
+      "fuel": 0.01,
+      "groceries": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "benefits": {
+      "lounge_access": 1,
+      "travel_insurance": false,
+      "purchase_protection": false,
+      "concierge": false,
+      "fuel_surcharge_waiver": false,
+      "airport_transfers": 0,
+      "complimentary_dining": 0,
+      "golf_privileges": false
+    },
+    "milestones": {
+      "milestone_1": {
+        "spend_threshold": 150000,
+        "reward_value": 1000
+      }
+    },
+    "card_features": {
+      "cashback": true,
+      "milestone_rewards": true,
+      "renewal_bonus": false,
+      "welcome_bonus": 1000
+    },
+    "eligibility": {
+      "min_annual_income": 500000,
+      "min_credit_score": 700
+    },
+    "confidence": 0.76,
+    "data_source": ["web"],
+    "last_updated": "2026-03-29T10:00:00Z",
+    "card_url": "https://www.cred.club/rupay",
+    "notes": "CRED's exclusive RuPay card with bill payment rewards"
+  }
+]

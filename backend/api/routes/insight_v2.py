@@ -3,7 +3,8 @@ from typing import Dict, List
 from fastapi import APIRouter
 
 from backend.engine.insight_engine_v2 import get_best_card_for_transactions
-from backend.engine.optimizer import compare_cards, generate_ai_insight
+from backend.engine.compare_optimizer import compare_cards
+from backend.engine.optimizer import generate_ai_insight
 from backend.engine.optimizer import optimize_spend as optimize_spend_with_dataset
 from backend.workers.orchestrator import InsightOrchestratorV2
 
@@ -24,7 +25,9 @@ def optimize_spend(payload: Dict):
 
 @router.post("/compare-cards")
 def compare_spend_cards(payload: Dict):
-    return {"results": compare_cards(payload)}
+    monthly_spend = payload.get("monthly_spend", payload)
+    card_ids = payload.get("card_ids", [])
+    return compare_cards(card_ids=card_ids, sample_spend=monthly_spend)
 
 
 @router.post("/ai-insights")

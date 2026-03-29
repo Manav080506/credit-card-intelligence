@@ -1,0 +1,362 @@
+{
+  "hdfc": {
+    "cards": [
+      {
+        "name": "Millennia Credit Card",
+        "slug": "millennia",
+        "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/millennia-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "Regalia Gold Credit Card",
+        "slug": "regalia_gold",
+        "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "Tata Neu Infinity Credit Card",
+        "slug": "tata_neu_infinity",
+        "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "MoneyBack Plus Credit Card",
+        "slug": "moneyback_plus",
+        "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/moneyback-plus-credit-card",
+        "priority": "medium"
+      },
+      {
+        "name": "Diners Club Black Credit Card",
+        "slug": "diners_club_black",
+        "url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black",
+        "priority": "medium"
+      }
+    ],
+    "total": 5
+  },
+  "axis": {
+    "cards": [
+      {
+        "name": "ACE Credit Card",
+        "slug": "ace",
+        "url": "https://www.axisbank.com/retail/cards/credit-card/ace-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "Magnus Credit Card",
+        "slug": "magnus",
+        "url": "https://www.axisbank.com/retail/cards/credit-card/magnus-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "Atlas Credit Card",
+        "slug": "atlas",
+        "url": "https://www.axisbank.com/retail/cards/credit-card/atlas-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "Flipkart Axis Bank Credit Card",
+        "slug": "flipkart",
+        "url": "https://www.axisbank.com/retail/cards/credit-card/flipkart-axis-bank-credit-card",
+        "priority": "medium"
+      },
+      {
+        "name": "Privilege Credit Card",
+        "slug": "privilege",
+        "url": "https://www.axisbank.com/retail/cards/credit-card/privilege-credit-card",
+        "priority": "medium"
+      }
+    ],
+    "total": 5
+  },
+  "sbi": {
+    "cards": [
+      {
+        "name": "SBI Cashback Credit Card",
+        "slug": "cashback",
+        "url": "https://www.sbicard.com/en/personal/credit-cards/cashback/sbi-cashback-card.page",
+        "priority": "high"
+      },
+      {
+        "name": "SBI SimplyClick Credit Card",
+        "slug": "simplyclick",
+        "url": "https://www.sbicard.com/en/personal/credit-cards/rewards/simplyclick-sbi-card.page",
+        "priority": "high"
+      },
+      {
+        "name": "SBI SimplySave Credit Card",
+        "slug": "simplysave",
+        "url": "https://www.sbicard.com/en/personal/credit-cards/rewards/simplysave-sbi-card.page",
+        "priority": "medium"
+      },
+      {
+        "name": "SBI Elite Credit Card",
+        "slug": "elite",
+        "url": "https://www.sbicard.com/en/personal/credit-cards/elite-credit-card.page",
+        "priority": "medium"
+      },
+      {
+        "name": "SBI Prime Credit Card",
+        "slug": "prime",
+        "url": "https://www.sbicard.com/en/personal/credit-cards/prime-credit-card.page",
+        "priority": "low"
+      }
+    ],
+    "total": 5
+  },
+  "icici": {
+    "cards": [
+      {
+        "name": "Amazon Pay ICICI Credit Card",
+        "slug": "amazon_pay",
+        "url": "https://www.icicibank.com/personal-banking/cards/credit-card/amazon-pay-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "ICICI Coral Credit Card",
+        "slug": "coral",
+        "url": "https://www.icicibank.com/personal-banking/cards/credit-card/coral-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "ICICI Sapphiro Credit Card",
+        "slug": "sapphiro",
+        "url": "https://www.icicibank.com/personal-banking/cards/credit-card/sapphiro-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "ICICI RubyX Credit Card",
+        "slug": "rubyx",
+        "url": "https://www.icicibank.com/personal-banking/cards/credit-card/rubyx-credit-card",
+        "priority": "medium"
+      },
+      {
+        "name": "ICICI Emergence Credit Card",
+        "slug": "emergence",
+        "url": "https://www.icicibank.com/personal-banking/cards/credit-card/emergence-credit-card",
+        "priority": "low"
+      }
+    ],
+    "total": 5
+  },
+  "amex": {
+    "cards": [
+      {
+        "name": "American Express Membership Rewards Card",
+        "slug": "mrcc",
+        "url": "https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/",
+        "priority": "high"
+      },
+      {
+        "name": "American Express Gold Charge Card",
+        "slug": "gold_charge",
+        "url": "https://www.americanexpress.com/in/credit-cards/gold-charge-card/",
+        "priority": "high"
+      },
+      {
+        "name": "American Express Platinum Travel Card",
+        "slug": "platinum_travel",
+        "url": "https://www.americanexpress.com/in/credit-cards/platinum-travel-card/",
+        "priority": "medium"
+      },
+      {
+        "name": "American Express SmartEarn Card",
+        "slug": "smart_earn",
+        "url": "https://www.americanexpress.com/in/credit-cards/smart-earn-card/",
+        "priority": "medium"
+      },
+      {
+        "name": "American Express Everyday Card",
+        "slug": "everyday",
+        "url": "https://www.americanexpress.com/in/credit-cards/everyday-card/",
+        "priority": "low"
+      }
+    ],
+    "total": 5
+  },
+  "idfc": {
+    "cards": [
+      {
+        "name": "IDFC First Bank Wealth Credit Card",
+        "slug": "wealth",
+        "url": "https://www.idfcfirstbank.com/credit-card/wealth-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "IDFC First Bank Select Credit Card",
+        "slug": "select",
+        "url": "https://www.idfcfirstbank.com/credit-card/select-credit-card",
+        "priority": "high"
+      },
+      {
+        "name": "IDFC First Bank Power Plus Credit Card",
+        "slug": "power_plus",
+        "url": "https://www.idfcfirstbank.com/credit-card/power-plus-credit-card",
+        "priority": "medium"
+      },
+      {
+        "name": "IDFC First Bank Super Elite Credit Card",
+        "slug": "super_elite",
+        "url": "https://www.idfcfirstbank.com/credit-card/super-elite-credit-card",
+        "priority": "low"
+      },
+      {
+        "name": "IDFC First Bank Prime Credit Card",
+        "slug": "prime_idfc",
+        "url": "https://www.idfcfirstbank.com/credit-card/prime-credit-card",
+        "priority": "low"
+      }
+    ],
+    "total": 5
+  },
+  "hsbc": {
+    "cards": [
+      {
+        "name": "HSBC Visa Platinum Credit Card",
+        "slug": "visa_platinum",
+        "url": "https://www.hsbc.co.in/credit-cards/products/hsbc-visa-platinum-credit-card/",
+        "priority": "high"
+      },
+      {
+        "name": "HSBC Cashback Credit Card",
+        "slug": "cashback_hsbc",
+        "url": "https://www.hsbc.co.in/credit-cards/products/hsbc-cashback-credit-card/",
+        "priority": "medium"
+      },
+      {
+        "name": "HSBC Visa Signature Credit Card",
+        "slug": "visa_signature",
+        "url": "https://www.hsbc.co.in/credit-cards/products/hsbc-visa-signature/",
+        "priority": "medium"
+      },
+      {
+        "name": "HSBC Live+ Credit Card",
+        "slug": "live_plus",
+        "url": "https://www.hsbc.co.in/credit-cards/products/hsbc-live-credit-card/",
+        "priority": "low"
+      },
+      {
+        "name": "HSBC EzPay Credit Card",
+        "slug": "ezpay",
+        "url": "https://www.hsbc.co.in/credit-cards/products/hsbc-ezpay-credit-card/",
+        "priority": "low"
+      }
+    ],
+    "total": 5
+  },
+  "standard_chartered": {
+    "cards": [
+      {
+        "name": "Standard Chartered Smart Credit Card",
+        "slug": "smart",
+        "url": "https://www.standardchartered.com/en/in/personal/credit-cards/smart/",
+        "priority": "high"
+      },
+      {
+        "name": "Standard Chartered Ultimate Credit Card",
+        "slug": "ultimate",
+        "url": "https://www.standardchartered.com/en/in/personal/credit-cards/ultimate/",
+        "priority": "high"
+      },
+      {
+        "name": "Standard Chartered Premium Credit Card",
+        "slug": "premium",
+        "url": "https://www.standardchartered.com/en/in/personal/credit-cards/premium/",
+        "priority": "medium"
+      },
+      {
+        "name": "Standard Chartered Focus Credit Card",
+        "slug": "focus",
+        "url": "https://www.standardchartered.com/en/in/personal/credit-cards/focus/",
+        "priority": "low"
+      },
+      {
+        "name": "Standard Chartered Rewards Credit Card",
+        "slug": "rewards_sc",
+        "url": "https://www.standardchartered.com/en/in/personal/credit-cards/rewards/",
+        "priority": "low"
+      }
+    ],
+    "total": 5
+  },
+  "yes_bank": {
+    "cards": [
+      {
+        "name": "Yes Bank Marquee Credit Card",
+        "slug": "marquee",
+        "url": "https://www.yesbank.in/personal/credit-cards/marquee",
+        "priority": "high"
+      },
+      {
+        "name": "Yes Bank Prosperity Credit Card",
+        "slug": "prosperity",
+        "url": "https://www.yesbank.in/personal/credit-cards/prosperity",
+        "priority": "high"
+      },
+      {
+        "name": "Yes Bank Classic Credit Card",
+        "slug": "classic_yb",
+        "url": "https://www.yesbank.in/personal/credit-cards/classic",
+        "priority": "medium"
+      },
+      {
+        "name": "Yes Bank Preferred Credit Card",
+        "slug": "preferred",
+        "url": "https://www.yesbank.in/personal/credit-cards/preferred",
+        "priority": "low"
+      },
+      {
+        "name": "Yes Bank Infinity Credit Card",
+        "slug": "infinity_yb",
+        "url": "https://www.yesbank.in/personal/credit-cards/infinity",
+        "priority": "low"
+      }
+    ],
+    "total": 5
+  },
+  "kotak": {
+    "cards": [
+      {
+        "name": "Kotak Mahindra Bank League Platinum Credit Card",
+        "slug": "league_platinum",
+        "url": "https://www.kotak.com/en/personal/credit-cards/league-platinum/",
+        "priority": "high"
+      },
+      {
+        "name": "Kotak Mahindra Bank Zen Signature Credit Card",
+        "slug": "zen_signature",
+        "url": "https://www.kotak.com/en/personal/credit-cards/zen-signature/",
+        "priority": "high"
+      },
+      {
+        "name": "Kotak Mahindra Bank Royale Credit Card",
+        "slug": "royale",
+        "url": "https://www.kotak.com/en/personal/credit-cards/royale/",
+        "priority": "medium"
+      },
+      {
+        "name": "Kotak Mahindra Bank Rare Credit Card",
+        "slug": "rare",
+        "url": "https://www.kotak.com/en/personal/credit-cards/rare/",
+        "priority": "low"
+      },
+      {
+        "name": "Kotak Mahindra Bank Essentials Credit Card",
+        "slug": "essentials",
+        "url": "https://www.kotak.com/en/personal/credit-cards/essentials/",
+        "priority": "low"
+      }
+    ],
+    "total": 5
+  },
+  "metaverk_summary": {
+    "total_issuers": 10,
+    "total_cards": 50,
+    "expansion_target": 100,
+    "roadmap": {
+      "phase_1": {"target": 12, "status": "complete", "date": "2026-03-01"},
+      "phase_2": {"target": 40, "status": "in-progress", "date": "2026-04-01"},
+      "phase_3": {"target": 100, "status": "planned", "date": "2026-06-01"}
+    }
+  }
+}

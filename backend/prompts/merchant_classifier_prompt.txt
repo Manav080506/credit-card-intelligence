@@ -1,0 +1,122 @@
+TASK:
+Classify merchant transactions into reward categories based on merchant name and MCC code.
+
+OBJECTIVE:
+Determine which reward rate applies to a transaction for optimization.
+
+INPUT:
+- merchant_name: String (e.g., "Amazon.com", "Swiggy Food Delivery")
+- mcc_code: Integer (e.g., 5411 for grocery, 5812 for dining)
+- optional: transaction_amount, location
+
+OUTPUT:
+Return ONE of the following categories:
+- online_shopping
+- dining
+- travel
+- groceries
+- fuel
+- utilities
+- general
+
+PRIORITY RULES (in order):
+1. MCC code match (most reliable)
+2. Merchant name keywords
+3. Pattern matching (domain, description)
+4. Default to general
+
+EXAMPLES:
+
+Input: Amazon.com, MCC=5411
+Override: MCC is 5411 = e-commerce
+Output: online_shopping
+Confidence: 0.95
+
+Input: Zomato, MCC=5812
+Match: merchant=dining keywords + MCC=dining
+Output: dining
+Confidence: 0.92
+
+Input: Shell Petrol, MCC=5541
+Match: merchant=fuel + MCC=fuel
+Output: fuel
+Confidence: 0.90
+
+Input: BigBasket, MCC=5411
+Match: merchant=groceries + MCC=grocery
+Output: groceries
+Confidence: 0.93
+
+Input: Uber Eats, MCC=5812
+Match: MCC=dining + merchant=delivery
+Output: dining
+Confidence: 0.88
+
+Input: Airbnb, MCC=7011
+Match: MCC=hotel/travel
+Output: travel
+Confidence: 0.91
+
+Input: Monthly Salary, MCC=9999
+Default: No keywords match
+Output: general
+Confidence: 0.10
+
+CONFIDENCE SCORING:
+- 0.95+: High confidence (strong MCC + keyword match)
+- 0.85-0.94: Good confidence (MCC match OR multiple keywords)
+- 0.75-0.84: Medium confidence (single strong signal)
+- 0.50-0.74: Low confidence (partial match)
+- <0.50: Uncertain (default to general)
+
+MCC CODE MAPPINGS (for reference):
+- 5411-5422: Groceries & supermarkets
+- 5812, 5814: Dining & restaurants
+- 3000-3299: Airlines & travel
+- 5541-5542: Fuel stations & car rentals
+- 4814-4899: Telecom & utilities
+- 5200-5299, 5400-5499: Retail & shopping
+- Default (0000): General merchant
+
+PSEUDO-CODE:
+```
+function classify_merchant(merchant_name, mcc_code):
+    confidence = 0
+    category = "general"
+    
+    # Step 1: MCC code lookup
+    mcc_category = lookup_mcc_mapping(mcc_code)
+    if mcc_category:
+        category = mcc_category
+        confidence = 0.85
+    
+    # Step 2: Keyword matching
+    keywords = extract_keywords(merchant_name)
+    keyword_match = match_keywords(keywords, reward_categories)
+    if keyword_match:
+        if keyword_match == mcc_category:
+            confidence = 0.95  # Both agree
+        else:
+            # Choose by confidence of keyword match
+            if keyword_confidence > 0.80:
+                category = keyword_match
+                confidence = keyword_confidence
+    
+    # Step 3: Domain/subdomain check
+    if ".com" or domain extension refines category:
+        confidence += 0.05
+    
+    return {
+        "category": category,
+        "confidence": min(confidence, 0.99)
+    }
+```
+
+EXPECTED OUTPUT FORMAT (JSON):
+{
+  "merchant_name": "Amazon.com",
+  "mcc_code": 5411,
+  "category": "online_shopping",
+  "confidence": 0.95,
+  "reasoning": "MCC=5411 (e-commerce) + merchant keyword match"
+}

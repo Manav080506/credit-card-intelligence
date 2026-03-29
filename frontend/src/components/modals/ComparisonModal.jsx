@@ -1,8 +1,14 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
-function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, formatMoney = (v) => v }) {
-  const [selectedIndex, setSelectedIndex] = useState(0)
+function ComparisonModal({
+  isOpen,
+  onClose,
+  topCards = [],
+  cards = [],
+  currentYearlyReward = 0,
+  formatMoney = (v) => v,
+}) {
 
   useEffect(() => {
     if (!isOpen) return undefined
@@ -13,26 +19,36 @@ function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, for
     }
   }, [isOpen])
 
-  if (!isOpen || !cards.length) return null
-
-  const displayCards = cards.slice(0, 3)
+  const displayCards = (topCards.length ? topCards : cards).slice(0, 3)
+  if (!isOpen || !displayCards.length) return null
 
   const cardMetrics = [
     { label: 'Annual Fee', key: 'annual_fee' },
     { label: 'Monthly Reward', key: 'monthly_reward' },
     { label: 'Yearly Reward', key: 'yearly_reward' },
     { label: 'Reward Efficiency', key: 'efficiency_score' },
+    { label: 'Confidence Label', key: 'confidence_label' },
     { label: 'Lounge Access', key: 'lounge_access' },
     { label: 'Forex Markup', key: 'forex_markup' },
   ]
 
+  const numericMetricKeys = new Set(['annual_fee', 'monthly_reward', 'yearly_reward', 'efficiency_score', 'forex_markup'])
+
   const getBestValue = (key) => {
-    return displayCards.map((c) => c[key] || 0).reduce((max, val) => Math.max(max, val), 0)
+    if (!numericMetricKeys.has(key)) {
+      return null
+    }
+    return displayCards.map((c) => Number(c[key] || 0)).reduce((max, val) => Math.max(max, val), 0)
   }
 
   const isBest = (cardIdx, key) => {
+    if (!numericMetricKeys.has(key)) {
+      return false
+    }
     return displayCards[cardIdx][key] === getBestValue(key)
   }
+
+  const bestCardId = displayCards[0]?.id
 
   const overlay = {
     initial: { opacity: 0 },
@@ -92,14 +108,17 @@ function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, for
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.1 }}
-                  className={`rounded-xl border ${idx === selectedIndex ? 'border-emerald-500/50 bg-gradient-to-br from-emerald-500/10 to-slate-900/40' : 'border-slate-700/40 bg-slate-800/30'} p-4 transition-all`}
+                  className={`rounded-xl border ${card.id === bestCardId ? 'border-emerald-500/60 bg-gradient-to-br from-emerald-500/12 to-slate-900/40' : 'border-slate-700/40 bg-slate-800/30'} p-4 transition-all`}
                 >
                   <div className="mb-3 flex items-start justify-between">
                     <div>
+                      <span className={`inline-flex rounded-full px-2 py-0.5 text-[10px] font-bold ${idx === 0 ? 'bg-emerald-500/20 text-emerald-300' : 'bg-slate-700/50 text-slate-300'}`}>
+                        #{idx + 1}
+                      </span>
                       <p className="text-xs font-bold uppercase tracking-wider text-slate-400">{card.bank || 'Bank'}</p>
                       <h3 className="mt-1 text-base md:text-lg font-bold text-slate-100">{card.name || 'Card Name'}</h3>
                     </div>
-                    {idx === selectedIndex && (
+                    {idx === 0 && (
                       <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 px-2.5 py-1 text-xs font-semibold text-emerald-300 border border-emerald-400/50">
                         ✓ Best Match
                       </span>
@@ -115,7 +134,14 @@ function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, for
                       <p className="text-xs text-slate-400">Annual Fee</p>
                       <p className="mt-1 text-lg font-bold text-slate-100">₹{formatMoney(card.annual_fee || 0)}</p>
                     </div>
+                    <div className="rounded-lg bg-slate-900/60 p-2.5 border border-slate-700/30">
+                      <p className="text-xs text-slate-400">Vs Current Card</p>
+                      <p className={`mt-1 text-sm font-bold ${Number(card.yearly_reward || 0) - Number(currentYearlyReward || 0) >= 0 ? 'text-emerald-300' : 'text-rose-300'}`}>
+                        {Number(card.yearly_reward || 0) - Number(currentYearlyReward || 0) >= 0 ? '+' : '-'}₹{formatMoney(Math.abs(Number(card.yearly_reward || 0) - Number(currentYearlyReward || 0)))} / year
+                      </p>
+                    </div>
                   </div>
+                  {card.reason ? <p className="mt-3 text-xs text-slate-300">{card.reason}</p> : null}
                 </motion.div>
               ))}
             </div>
@@ -149,7 +175,7 @@ function ComparisonModal({ isOpen, onClose, cards = [], selectedCard = null, for
                                 : 'text-slate-300'
                             }`}
                           >
-                            {metric.key.includes('fee') || metric.key.includes('reward') ? `₹${formatMoney(value || 0)}` : value || '—'}
+                            {metric.key.includes('fee') || metric.key.includes('reward') ? `₹${formatMoney(value || 0)}` : String(value ?? '—')}
                           </td>
                         )
                       })}

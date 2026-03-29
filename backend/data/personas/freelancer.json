@@ -1,0 +1,10 @@
+{
+  "persona_name": "Freelancer",
+  "monthly_spend": {
+    "online_shopping": 12000,
+    "dining": 6000,
+    "travel": 4000,
+    "utilities": 7000,
+    "groceries": 5000
+  }
+}

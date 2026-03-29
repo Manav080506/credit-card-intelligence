@@ -1,29 +1,38 @@
-# === AUTHORITATIVE CARD SCHEMA ===
+"""Canonical card schema contract for stable engine and data pipeline usage."""
 
+CARD_SCHEMA = {
+    "card_id": str,
+    "card_name": str,
+    "bank": str,
+    "annual_fee": float,
+    "reward_rates": dict,
+    "benefits": dict,
+    "milestone_bonus": list,
+    "confidence": float,
+}
+
+# Backward-compatible schema constants used by legacy validators.
+# Keep these until all validation paths are migrated to CARD_SCHEMA.
 REQUIRED_CARD_FIELDS = {
     "card_id": str,
     "card_name": str,
-    "issuer": str,
-    "network": list,
-    "tier": str,
-    "reward_type": str,
+    "bank": str,
     "fees": dict,
     "earn_rules": list,
-    "constraints": dict,
-    "meta": dict
 }
 
 REQUIRED_FEES_FIELDS = {
     "joining_fee": (int, float),
-    "annual_fee": (int, float)
+    "annual_fee": (int, float),
 }
 
 REQUIRED_EARN_RULE_FIELDS = {
     "category": str,
-    "reward_rate": (int, float),
-    "reward_unit": str
+    "rate": (int, float),
 }
 
 OPTIONAL_CARD_FIELDS = {
-    "redemption_rules": list
+    "benefits": dict,
+    "milestone_bonus": list,
+    "confidence": (int, float),
 }

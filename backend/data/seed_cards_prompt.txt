@@ -1,0 +1,149 @@
+TASK:
+Generate structured JSON for 10 foundational credit cards that will populate the initial dataset.
+
+CONTEXT:
+This is Phase 1 of the Credit Card Intelligence platform. These 10 cards represent major Indian issuers (HDFC, Axis, SBI, ICICI, Amex) with strong market presence, frequent usage, and reliable reward data.
+
+REQUIREMENTS:
+1. Generate valid JSON following the card_schema structure
+2. Ensure reward rates are realistic and based on actual 2026 card features
+3. Include annual fees (where applicable)
+4. Confidence scores must be ≥0.85
+5. Milestones must be realistic and achievable
+6. Benefits should reflect actual card perks
+
+CARDS TO GENERATE:
+
+1. HDFC Millennia
+   - Primary: Online shopping (5%)
+   - Secondary: Dining (2%), Travel (3%)
+   - Annual Fee: ₹500
+   - Benefits: Complimentary golf, airport transfers
+   - Milestones: ₹300k → ₹5k bonus
+
+2. HDFC Regalia Gold
+   - Primary: Dining (1.5%), Travel (3%)
+   - Secondary: Online shopping (2%)
+   - Annual Fee: ₹2500
+   - Benefits: Lounge access (4), priority pass
+   - Milestones: ₹500k → ₹10k bonus
+
+3. Axis Ace
+   - Primary: Utilities (5%), Online shopping (5%)
+   - Secondary: Dining (2%)
+   - Annual Fee: ₹500
+   - Benefits: No annual fee for first year
+   - Milestones: ₹200k → ₹2k bonus
+
+4. Axis Flipkart
+   - Primary: Online shopping (5%)
+   - Secondary: Dining (1.5%), Travel (2%)
+   - Annual Fee: ₹499
+   - Benefits: Flipkart SuperCoins multiplier (1.5x)
+   - Milestones: ₹100k → ₹1.5k bonus
+
+5. SBI Cashback
+   - Primary: Online shopping (5%), Dining (2%)
+   - Secondary: General (1%)
+   - Annual Fee: ₹0 (Free)
+   - Benefits: Cashback rewards, statement rewards
+   - Milestones: ₹250k → ₹3k bonus
+
+6. SBI SimplyClick
+   - Primary: Online shopping (5%)
+   - Secondary: General (1%)
+   - Annual Fee: ₹499
+   - Benefits: No annual fee on renewal if spend > ₹100k
+   - Milestones: ₹300k → ₹4k bonus
+
+7. ICICI Amazon Pay
+   - Primary: Online shopping (5%), Fuel (2%)
+   - Secondary: Dining (1%)
+   - Annual Fee: ₹0 (Free)
+   - Benefits: Amazon Pay cashback, fuel surcharge waiver
+   - Milestones: ₹150k → ₹2k bonus
+
+8. ICICI Coral
+   - Primary: Online shopping (5%), Dining (2%), Travel (3%)
+   - Secondary: General (1%)
+   - Annual Fee: ₹4000
+   - Benefits: Lounge access (6), concierge service
+   - Milestones: ₹400k → ₹8k bonus
+
+9. American Express MRCC
+   - Primary: Travel (4%), Dining (3%)
+   - Secondary: Online shopping (2%), General (1%)
+   - Annual Fee: ₹5500
+   - Benefits: Lounge access (10), travel credit (₹10k/year)
+   - Milestones: ₹500k → ₹15k bonus
+
+10. IDFC Power Plus
+    - Primary: Online shopping (5%), Dining (2%), Travel (2%)
+    - Secondary: Fuel (1%), General (1%)
+    - Annual Fee: ₹1000
+    - Benefits: No annual fee for first year, fuel surcharge waiver
+    - Milestones: ₹300k → ₹5k bonus
+
+JSON SCHEMA:
+{
+  "card_id": "unique_identifier",
+  "card_name": "string",
+  "bank": "string",
+  "card_type": "credit|debit|prepaid",
+  "segment": "premium|standard|value",
+  "annual_fee": number,
+  "reward_rates": {
+    "online_shopping": 0.00-0.10,
+    "dining": 0.00-0.10,
+    "travel": 0.00-0.10,
+    "fuel": 0.00-0.10,
+    "groceries": 0.00-0.10,
+    "utilities": 0.00-0.10,
+    "general": 0.00-0.10
+  },
+  "benefits": {
+    "lounge_access": number (count of lounges or 0),
+    "travel_insurance": boolean,
+    "purchase_protection": boolean,
+    "concierge": boolean,
+    "fuel_surcharge_waiver": boolean,
+    "airport_transfers": number,
+    "complimentary_dining": number,
+    "golf_privileges": boolean
+  },
+  "milestones": {
+    "milestone_1": {
+      "spend_threshold": number,
+      "reward_value": number
+    }
+  },
+  "card_features": {
+    "cashback": boolean,
+    "milestone_rewards": boolean,
+    "renewal_bonus": boolean,
+    "welcome_bonus": number
+  },
+  "eligibility": {
+    "min_annual_income": number,
+    "min_credit_score": number
+  },
+  "confidence": 0.85-0.95,
+  "data_source": ["web", "pdf", "manual"],
+  "last_updated": "2026-03-29T00:00:00Z",
+  "card_url": "https://bank.com/card-page",
+  "notes": "Additional info"
+}
+
+VALIDATION RULES:
+✓ Reward rates: sum ≤ 100% across all categories
+✓ Annual fee: 0 ≤ fee ≤ 10000
+✓ Benefits: realistic counts (lounge_access: 2-12, airport_transfers: 0-4)
+✓ Milestones: threshold < ₹1 million, bonus < ₹50k
+✓ Confidence: ≥0.85 (web + manual research)
+✓ Eligibility: min_annual_income ≥ ₹300000, min_credit_score ≥ 600
+
+OUTPUT:
+Generate complete JSON array with all 10 cards. Save as:
+backend/data/cards/seed_10_cards_phase1.json
+
+Each card should be production-ready with no placeholder values.

@@ -1,0 +1,36 @@
+{
+  "card_id": "string",
+  "card_name": "string",
+  "bank": "string",
+  "network": "visa | mastercard | amex | rupay",
+  "annual_fee": "number",
+  "joining_fee": "number",
+  "reward_rates": {
+    "online_shopping": "float",
+    "dining": "float",
+    "travel": "float",
+    "groceries": "float",
+    "fuel": "float",
+    "utilities": "float",
+    "general": "float"
+  },
+  "reward_type": "cashback | points | miles",
+  "milestone_bonus": [
+    {
+      "spend_threshold": "number",
+      "bonus_value": "number"
+    }
+  ],
+  "caps": {
+    "online_shopping": "number",
+    "dining": "number"
+  },
+  "benefits": {
+    "lounge_access": "integer",
+    "fuel_surcharge_waiver": "boolean",
+    "forex_markup": "float"
+  },
+  "source_url": "string",
+  "last_updated": "date",
+  "data_confidence": "float"
+}

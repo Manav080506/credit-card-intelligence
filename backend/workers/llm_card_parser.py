@@ -7,6 +7,35 @@ import os
 from backend.engine.card_validator import validate_card
 
 
+def parse_reward_text(text: str):
+    """Extract reward structure from raw text using deterministic pattern rules."""
+    reward_rates = {
+        "online_shopping": 0.0,
+        "dining": 0.0,
+        "travel": 0.0,
+        "groceries": 0.0,
+        "fuel": 0.0,
+        "utilities": 0.0,
+        "general": 0.01,
+    }
+
+    patterns = {
+        "online_shopping": r"(\d+(?:\.\d+)?)%[^.]{0,80}(online|shopping|e-?com)",
+        "dining": r"(\d+(?:\.\d+)?)%[^.]{0,80}dining",
+        "travel": r"(\d+(?:\.\d+)?)%[^.]{0,80}travel",
+        "groceries": r"(\d+(?:\.\d+)?)%[^.]{0,80}grocer",
+        "fuel": r"(\d+(?:\.\d+)?)%[^.]{0,80}fuel",
+        "utilities": r"(\d+(?:\.\d+)?)%[^.]{0,80}(utilities|utility|bill)",
+    }
+
+    for category, pattern in patterns.items():
+        matches = [float(match.group(1)) / 100.0 for match in re.finditer(pattern, text, flags=re.IGNORECASE)]
+        if matches:
+            reward_rates[category] = max(matches)
+
+    return reward_rates
+
+
 # -------------------------
 # text cleaning
 # -------------------------

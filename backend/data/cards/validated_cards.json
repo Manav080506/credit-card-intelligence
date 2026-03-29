@@ -1,0 +1,238 @@
+[
+  {
+    "card_name": "Unknown Credit Card",
+    "bank": "American Express",
+    "annual_fee": 0.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [],
+    "source_url": "https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/",
+    "last_updated": "2026-03-29T12:28:27.907658",
+    "error": "404 Client Error: Not Found for url: https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/"
+  },
+  {
+    "card_name": "Unknown Credit Card",
+    "bank": "American Express",
+    "annual_fee": 0.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [],
+    "source_url": "https://www.americanexpress.com/in/credit-cards/gold-charge-card/",
+    "last_updated": "2026-03-29T12:28:29.501529",
+    "error": "404 Client Error: Not Found for url: https://www.americanexpress.com/in/credit-cards/gold-charge-card/"
+  },
+  {
+    "card_name": "Unknown Credit Card",
+    "bank": "Axis Bank",
+    "annual_fee": 0.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [],
+    "source_url": "https://www.axisbank.com/retail/cards/credit-card/flipkart-axis-bank-credit-card",
+    "last_updated": "2026-03-29T12:28:30.980398",
+    "error": "404 Client Error: Not Found for url: https://www.axisbank.com/retail/cards/credit-card/flipkart-axis-bank-credit-card"
+  },
+  {
+    "card_name": "Unknown Credit Card",
+    "bank": "Axis Bank",
+    "annual_fee": 0.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [],
+    "source_url": "https://www.axisbank.com/retail/cards/credit-card/magnus-credit-card",
+    "last_updated": "2026-03-29T12:28:31.587405",
+    "error": "404 Client Error: Not Found for url: https://www.axisbank.com/retail/cards/credit-card/magnus-credit-card"
+  },
+  {
+    "card_name": "Regalia First Credit Card",
+    "bank": "HDFC Bank",
+    "annual_fee": 1000.0,
+    "reward_rates": {
+      "online_shopping": 0.05,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [
+      "lounge_access",
+      "forex_benefit",
+      "fuel_surcharge_waiver"
+    ],
+    "source_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/millennia-credit-card",
+    "last_updated": "2026-03-29T12:28:32.125519"
+  },
+  {
+    "card_name": "Unknown Credit Card",
+    "bank": "HDFC Bank",
+    "annual_fee": 0.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [],
+    "source_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-credit-card",
+    "last_updated": "2026-03-29T12:28:32.902934",
+    "error": "404 Client Error: Not Found for url: https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-credit-card"
+  },
+  {
+    "card_name": "Amazon Pay ICICI BankCredit Card",
+    "bank": "ICICI Bank",
+    "annual_fee": 100.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.0375,
+      "general": 0.05
+    },
+    "milestones": [],
+    "benefits": [
+      "forex_benefit",
+      "fuel_surcharge_waiver"
+    ],
+    "source_url": "https://www.icicibank.com/personal-banking/cards/credit-card/amazon-pay-credit-card",
+    "last_updated": "2026-03-29T12:28:33.133515"
+  },
+  {
+    "card_name": "ICICI Bank Coral Credit Card",
+    "bank": "ICICI Bank",
+    "annual_fee": 500.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [
+      "lounge_access",
+      "forex_benefit",
+      "fuel_surcharge_waiver"
+    ],
+    "source_url": "https://www.icicibank.com/personal-banking/cards/credit-card/coral-credit-card",
+    "last_updated": "2026-03-29T12:28:33.431720"
+  },
+  {
+    "card_name": "Unknown Credit Card",
+    "bank": "IDFC First Bank",
+    "annual_fee": 0.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [],
+    "source_url": "https://www.idfcfirstbank.com/credit-card/power-plus-credit-card",
+    "last_updated": "2026-03-29T12:28:34.258438",
+    "error": "404 Client Error: Not Found for url: https://www.idfcfirst.bank.in/credit-card/power-plus-credit-card"
+  },
+  {
+    "card_name": "Unknown Credit Card",
+    "bank": "IDFC First Bank",
+    "annual_fee": 0.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [],
+    "source_url": "https://www.idfcfirstbank.com/credit-card/first-wealth-credit-card",
+    "last_updated": "2026-03-29T12:28:35.192120",
+    "error": "404 Client Error: Not Found for url: https://www.idfcfirst.bank.in/credit-card/first-wealth-credit-card"
+  },
+  {
+    "card_name": "Unknown Credit Card",
+    "bank": "SBI Card",
+    "annual_fee": 0.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [],
+    "source_url": "https://www.sbicard.com/en/personal/credit-cards/cashback/sbi-cashback-card.page",
+    "last_updated": "2026-03-29T12:28:36.046867",
+    "error": "404 Client Error: Not Found for url: https://www.sbicard.com/en/personal/credit-cards/cashback/sbi-cashback-card.page"
+  },
+  {
+    "card_name": "Unknown Credit Card",
+    "bank": "SBI Card",
+    "annual_fee": 0.0,
+    "reward_rates": {
+      "online_shopping": 0.01,
+      "dining": 0.01,
+      "travel": 0.01,
+      "groceries": 0.01,
+      "fuel": 0.01,
+      "utilities": 0.01,
+      "general": 0.01
+    },
+    "milestones": [],
+    "benefits": [],
+    "source_url": "https://www.sbicard.com/en/personal/credit-cards/rewards/simplyclick-sbi-card.page",
+    "last_updated": "2026-03-29T12:28:36.564631",
+    "error": "404 Client Error: Not Found for url: https://www.sbicard.com/en/personal/credit-cards/rewards/simplyclick-sbi-card.page"
+  }
+]

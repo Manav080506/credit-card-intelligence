@@ -130,49 +130,36 @@ function Dashboard() {
 
   // Build comparison cards list for modal
   const comparisonCards = useMemo(() => {
-    if (!result?.best_card) return []
-    return [
-      {
-        id: 'best',
-        bank: 'Recommended',
-        name: result.best_card,
-        monthly_reward: Number(result?.expected_monthly_reward || 0),
-        yearly_reward: Number(result?.expected_yearly_reward || 0),
-        annual_fee: 3000,
-        efficiency_score: confidencePercent / 100,
-        lounge_access: true,
-        forex_markup: 2,
-        pros: insights.chips.slice(0, 3),
-        cons: ['Complex point system'],
-      },
-      {
-        id: 'alternative',
-        bank: 'Alternative',
-        name: result?.second_best_card || 'HDFC Millennia',
-        monthly_reward: Number(result?.expected_monthly_reward || 0) * 0.75,
-        yearly_reward: Number(result?.expected_yearly_reward || 0) * 0.75,
-        annual_fee: 2500,
-        efficiency_score: (confidencePercent - 10) / 100,
-        lounge_access: true,
-        forex_markup: 1.5,
-        pros: ['Good dining rewards', 'Travel benefits'],
-        cons: ['Moderate annual fee'],
-      },
-      {
-        id: 'budget',
-        bank: 'Budget',
-        name: 'SBI Cashback',
-        monthly_reward: Number(result?.expected_monthly_reward || 0) * 0.6,
-        yearly_reward: Number(result?.expected_yearly_reward || 0) * 0.6,
-        annual_fee: 0,
-        efficiency_score: (confidencePercent - 25) / 100,
-        lounge_access: false,
-        forex_markup: 3,
-        pros: ['Zero annual fee', 'Easy approval'],
-        cons: ['Limited lounge access', 'Higher forex markup'],
-      },
-    ]
-  }, [result, confidencePercent, insights])
+    if (!Array.isArray(result?.top_cards) || result.top_cards.length === 0) {
+      return []
+    }
+
+    return result.top_cards.slice(0, 3).map((row, index) => ({
+      id: row.card_id || `rank-${index + 1}`,
+      bank: index === 0 ? 'Recommended' : `Alternative ${index}`,
+      name: row.card_name || 'Unknown Card',
+      monthly_reward: Number(row.monthly_reward || 0),
+      yearly_reward: Number(row.yearly_reward || 0),
+      annual_fee: Number(row.annual_fee || 0),
+      efficiency_score: Number(row.confidence || 0),
+      confidence_label: row.confidence_label || 'low',
+      reason: row.reason || '',
+      rank: index + 1,
+      lounge_access: Boolean(row.lounge_access),
+      forex_markup: Number(row.forex_markup || 0),
+      category_breakdown: row.reward_breakdown || row.category_breakdown || {},
+      milestone_bonus: Number(row.milestone_bonus || 0),
+      pros: [
+        `Confidence ${(Number(row.confidence || 0) * 100).toFixed(0)}%`,
+        `Projected yearly reward ₹${formatMoney(Number(row.yearly_reward || 0))}`,
+        `Monthly reward ₹${formatMoney(Number(row.monthly_reward || 0))}`,
+      ],
+      cons: [
+        `Annual fee ₹${formatMoney(Number(row.annual_fee || 0))}`,
+        Number(row.forex_markup || 0) > 0 ? `Forex markup ${Number(row.forex_markup || 0)}%` : 'No additional forex data',
+      ],
+    }))
+  }, [result])
 
   const handlePersonaSelect = (personaMetrics) => {
     setSelectedPersona(personaMetrics)
@@ -184,8 +171,9 @@ function Dashboard() {
     })
   }
 
-  const handleCardClick = (card) => {
-    setSelectedCard(card)
+  const handleCardClick = (cardName) => {
+    const match = comparisonCards.find((card) => card.name === cardName) || comparisonCards[0] || null
+    setSelectedCard(match)
   }
 
   const handleSubmit = async (event) => {
@@ -431,8 +419,20 @@ function Dashboard() {
       </div>
 
       {/* Modals */}
-      <ComparisonModal isOpen={comparisonOpen} onClose={() => setComparisonOpen(false)} cards={comparisonCards} selectedCard={0} formatMoney={formatMoney} />
-      <CardDetailDrawer isOpen={!!selectedCard} onClose={() => setSelectedCard(null)} card={selectedCard} />
+      <ComparisonModal
+        isOpen={comparisonOpen}
+        onClose={() => setComparisonOpen(false)}
+        topCards={comparisonCards}
+        selectedCard={0}
+        currentYearlyReward={annualProjection * 0.78}
+        formatMoney={formatMoney}
+      />
+      <CardDetailDrawer
+        isOpen={!!selectedCard}
+        onClose={() => setSelectedCard(null)}
+        card={selectedCard}
+        reward_breakdown={selectedCard?.category_breakdown || {}}
+      />
     </motion.section>
   )
 

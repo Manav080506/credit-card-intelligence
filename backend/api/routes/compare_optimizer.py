@@ -6,14 +6,14 @@ from backend.engine.compare_optimizer import compare_cards
 
 
 router = APIRouter(
-    prefix="/compare_smart",
+    prefix="/compare",
     tags=["Compare"]
 )
 
 
 class CompareRequest(BaseModel):
 
-    card_ids: List[str]
+    card_ids: List[str] = []
 
     monthly_spend: Dict[str, float]
 

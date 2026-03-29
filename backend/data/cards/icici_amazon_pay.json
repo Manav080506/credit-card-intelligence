@@ -1,0 +1,23 @@
+{
+  "card_id": "icici_amazon_pay",
+  "card_name": "ICICI Amazon Pay",
+  "bank": "ICICI",
+  "annual_fee": 0,
+  "reward_type": "cashback",
+  "reward_rates": {
+    "online_shopping": 0.05,
+    "dining": 0.01,
+    "travel": 0.01,
+    "groceries": 0.01,
+    "fuel": 0.01,
+    "utilities": 0.01,
+    "general": 0.01
+  },
+  "milestone_bonus": [],
+  "benefits": {
+    "lounge_access": 0,
+    "fuel_surcharge_waiver": true,
+    "forex_markup": 3.5
+  },
+  "confidence": 0.94
+}

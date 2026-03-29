@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "worker": "reward_rules_validator",
+  "validated_count": 12,
+  "failed_count": 2,
+  "failed_cards": [
+    {
+      "card_name": "ACE Credit Card",
+      "errors": [
+        "invalid reward rate for utilities: 0.25"
+      ]
+    },
+    {
+      "card_name": "Regalia Gold Credit Card",
+      "errors": [
+        "invalid reward rate for travel: 0.7"
+      ]
+    }
+  ],
+  "output_file": "/Users/manavrunthala/credit-card-intelligence/backend/data/cards/validated_cards.json"
+}

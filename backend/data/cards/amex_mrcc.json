@@ -1,0 +1,28 @@
+{
+  "card_id": "amex_mrcc",
+  "card_name": "American Express MRCC",
+  "bank": "Amex",
+  "annual_fee": 1500,
+  "reward_type": "points",
+  "reward_rates": {
+    "online_shopping": 0.02,
+    "dining": 0.03,
+    "travel": 0.02,
+    "groceries": 0.01,
+    "fuel": 0.0,
+    "utilities": 0.01,
+    "general": 0.01
+  },
+  "milestone_bonus": [
+    {
+      "spend_threshold": 240000,
+      "bonus_value": 3000
+    }
+  ],
+  "benefits": {
+    "lounge_access": 4,
+    "fuel_surcharge_waiver": false,
+    "forex_markup": 3.5
+  },
+  "confidence": 0.9
+}

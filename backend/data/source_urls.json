@@ -1,0 +1,28 @@
+{
+  "hdfc": [
+    "https://www.hdfcbank.com/personal/pay/cards/credit-cards/millennia-credit-card",
+    "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
+    "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-credit-card"
+  ],
+  "axis": [
+    "https://www.axisbank.com/retail/cards/credit-card/ace-credit-card",
+    "https://www.axisbank.com/retail/cards/credit-card/flipkart-axis-bank-credit-card",
+    "https://www.axisbank.com/retail/cards/credit-card/magnus-credit-card"
+  ],
+  "sbi": [
+    "https://www.sbicard.com/en/personal/credit-cards/cashback/sbi-cashback-card.page",
+    "https://www.sbicard.com/en/personal/credit-cards/rewards/simplyclick-sbi-card.page"
+  ],
+  "icici": [
+    "https://www.icicibank.com/personal-banking/cards/credit-card/amazon-pay-credit-card",
+    "https://www.icicibank.com/personal-banking/cards/credit-card/coral-credit-card"
+  ],
+  "amex": [
+    "https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/",
+    "https://www.americanexpress.com/in/credit-cards/gold-charge-card/"
+  ],
+  "idfc": [
+    "https://www.idfcfirstbank.com/credit-card/power-plus-credit-card",
+    "https://www.idfcfirstbank.com/credit-card/first-wealth-credit-card"
+  ]
+}

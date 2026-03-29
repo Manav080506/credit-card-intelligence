@@ -1,0 +1,111 @@
+TASK:
+Extract structured reward rates from credit card description text.
+
+INPUT:
+Raw marketing description of a credit card's rewards program.
+
+OUTPUT FORMAT:
+Valid JSON only (no markdown, no explanations).
+
+{
+ "reward_rates": {
+  "online_shopping": float (0.0-1.0),
+  "dining": float (0.0-1.0),
+  "travel": float (0.0-1.0),
+  "groceries": float (0.0-1.0),
+  "fuel": float (0.0-1.0),
+  "utilities": float (0.0-1.0),
+  "general": float (0.0-1.0)
+ },
+ "milestones": [
+  {
+   "threshold": number (annual spend in ₹),
+   "bonus": number (cashback or points)
+  }
+ ],
+ "caps": {
+  "category_name": number (annual cap in ₹)
+ },
+ "benefits": {
+  "lounge_access": number (visits),
+  "travel_insurance": boolean,
+  "purchase_protection": boolean,
+  "concierge": boolean
+ }
+}
+
+CONVERSION RULES:
+
+1. Points to cashback: 1 point = ₹0.25 (unless text specifies otherwise)
+
+2. Percentage rewards: "5% cashback" → 0.05
+
+3. Points per 100: "10 points per ₹100 spend" → 10 * 0.0025 = 0.025 (assuming 1 point = ₹0.25)
+
+4. Multiplier rates: "5X points on dining" → add 5 * 0.0025 = 0.0125 to base rate
+
+5. Category mapping:
+   - Amazon, Flipkart, shopping, online → online_shopping
+   - Restaurants, food delivery, café → dining
+   - Flights, hotels, bookings, holidays → travel
+   - Grocery, vegetables, supermarket → groceries
+   - Petrol, fuel, gas station → fuel
+   - Electricity, water, phone, broadband → utilities
+   - Everything else → general
+
+6. Exclusions: If text says "excluding dining" → set that category to 0.0
+
+7. Milestones: "Spend ₹5L in a year → ₹10K cashback" → {"threshold": 500000, "bonus": 10000}
+
+8. Caps: "Max ₹50K yearly cashback" → {"annual_total": 50000}
+
+EXAMPLES:
+
+Input: "5% cashback on all online shopping, 3% on dining, 1% on general spends"
+Output:
+{
+ "reward_rates": {
+  "online_shopping": 0.05,
+  "dining": 0.03,
+  "travel": 0.0,
+  "groceries": 0.0,
+  "fuel": 0.0,
+  "utilities": 0.0,
+  "general": 0.01
+ },
+ "milestones": [],
+ "caps": {},
+ "benefits": {}
+}
+
+Input: "Earn 5X reward points on travel (flights, hotels), 2X on dining, 1X general. 1 point = ₹0.50. Annual milestone: ₹2L spend = ₹5K bonus"
+Output:
+{
+ "reward_rates": {
+  "online_shopping": 0.0,
+  "dining": 0.01,
+  "travel": 0.025,
+  "groceries": 0.0,
+  "fuel": 0.0,
+  "utilities": 0.0,
+  "general": 0.005
+ },
+ "milestones": [
+  {
+   "threshold": 200000,
+   "bonus": 5000
+  }
+ ],
+ "caps": {},
+ "benefits": {}
+}
+
+TEXT TO PARSE:
+{{card_text}}
+
+CONSTRAINTS:
+- Return ONLY valid JSON.
+- If category not mentioned, set reward_rates[category] = 0.0
+- If reward text is ambiguous or unclear, set data_confidence lower and use best-guess categorization.
+- Do not invent rewards not mentioned in text.
+- Preserve exact numbers from source text.
